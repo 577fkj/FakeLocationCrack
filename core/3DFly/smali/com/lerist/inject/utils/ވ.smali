@@ -679,105 +679,12 @@
 .end method
 
 .method public static final ׯ(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 4
+    .locals 1
 
-    const-string v0, ","
+    sput-object p1, Lcom/lerist/inject/utils/ވ;->ԫ:Ljava/lang/String;
 
-    invoke-static {}, LԪ/Ԩ;->Ϳ()Landroid/content/Context;
+    const/4 v0, 0x0
+    sput-object v0, Lcom/lerist/inject/utils/ވ;->Ԫ:Ljava/lang/String;
 
-    move-result-object v1
-
-    const-string v2, "dev.lerist.fakelocation"
-
-    invoke-static {v1, v2}, Lcom/lerist/inject/utils/Ԩ;->Ϳ(Landroid/content/Context;Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-static {}, LԪ/Ԩ;->Ϳ()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-static {v3, v2}, Lcom/lerist/inject/utils/Ԩ;->Ԩ(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, "|"
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    sget-object v2, Lcom/lerist/inject/utils/ވ;->ԩ:Lcom/lerist/inject/utils/֏;
-
-    new-instance v3, Lcom/lerist/inject/utils/ވ$Ϳ;
-
-    invoke-direct {v3, p0, p1, v1}, Lcom/lerist/inject/utils/ވ$Ϳ;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-virtual {v2, v3}, Lcom/lerist/inject/utils/֏;->ֈ(Lcom/lerist/inject/utils/֏$Ԭ;)V
-
-    sget-object v2, Lcom/lerist/inject/utils/ވ;->ԩ:Lcom/lerist/inject/utils/֏;
-
-    invoke-virtual {v2}, Lcom/lerist/inject/utils/֏;->Ԯ()Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    sget-object p0, Lcom/lerist/inject/utils/ވ;->ԩ:Lcom/lerist/inject/utils/֏;
-
-    const-string p1, "vef.api.fakeloc.cc"
-
-    const/16 v0, 0x3015
-
-    invoke-virtual {p0, p1, v0}, Lcom/lerist/inject/utils/֏;->Ԭ(Ljava/lang/String;I)V
-
-    goto :goto_0
-
-    :cond_0
-    :try_start_0
-    sget-object v2, Lcom/lerist/inject/utils/ވ;->ԩ:Lcom/lerist/inject/utils/֏;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "hd7x809H$l1OI863"
-
-    const-string v0, "IUdH0kG1kDTgLkPl"
-
-    invoke-static {p0, p1, v0}, Lcom/lerist/inject/utils/Ϳ;->Ԫ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v2, p0}, Lcom/lerist/inject/utils/֏;->ՠ(Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :catchall_0
-    :goto_0
     return-void
 .end method
