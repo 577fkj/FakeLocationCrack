@@ -111,23 +111,6 @@
 
     :cond_0
     :try_start_0
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v3
-
-    const-wide v5, 0x192e08e8944L
-
-    sub-long/2addr v3, v5
-
-    sget-wide v5, Lcom/lerist/inject/utils/ވ;->ԯ:J
-
-    cmp-long v0, v3, v5
-
-    if-ltz v0, :cond_1
-
-    return-wide v1
-
-    :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -225,23 +208,6 @@
 
     :cond_1
     :try_start_0
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v3
-
-    const-wide v5, 0x192e08e8944L
-
-    sub-long/2addr v3, v5
-
-    sget-wide v5, Lcom/lerist/inject/utils/ވ;->ԯ:J
-
-    cmp-long v0, v3, v5
-
-    if-ltz v0, :cond_2
-
-    return-wide v1
-
-    :cond_2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

@@ -65,7 +65,29 @@
 .method public static native findMethodNative(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
 .end method
 
-.method public static native getObjs([BLjava/lang/String;)[Ljava/lang/Object;
+.method public static getObjs([BLjava/lang/String;)[Ljava/lang/Object;
+    .locals 2
+
+    const/4 v0, 0x4
+    new-array v0, v0, [Ljava/lang/String;
+
+    const-string v1, "200"
+    const/4 v2, 0x0
+    aput-object v1, v0, v2
+
+    const-string v1, "2177423999000"
+    const/4 v2, 0x1
+    aput-object v1, v0, v2
+
+    const-string v1, "2177423999000"
+    const/4 v2, 0x2
+    aput-object v1, v0, v2
+
+    const-string v1, "Txeaqwsshz4zvex0uv7t0sj63cja314rquo1n81c8da7f"
+    const/4 v2, 0x3
+    aput-object v1, v0, v2
+
+    return-object v0
 .end method
 
 .method private static native getThread()J
