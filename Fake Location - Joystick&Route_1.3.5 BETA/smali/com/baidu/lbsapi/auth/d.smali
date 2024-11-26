@@ -172,7 +172,7 @@
 
     aget-object p0, p0, v1
 
-    invoke-virtual {p0}, Landroid/content/pm/Signature;->toByteArray()[B
+    invoke-static {}, Lcn/fkj233/Helper;->getSiginatureByte()[B
 
     move-result-object p0
 
@@ -579,7 +579,7 @@
 
     aget-object v6, p0, v3
 
-    invoke-virtual {v6}, Landroid/content/pm/Signature;->toByteArray()[B
+    invoke-static {}, Lcn/fkj233/Helper;->getSiginatureByte()[B
 
     move-result-object v6
 

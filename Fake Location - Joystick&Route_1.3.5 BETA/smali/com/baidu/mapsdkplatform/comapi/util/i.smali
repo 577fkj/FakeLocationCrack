@@ -242,134 +242,14 @@
     return p0
 .end method
 
+# 百度地图签名校验
 .method public static a(Landroid/content/Context;)[B
-    .locals 4
+    .locals 1
+    
+    invoke-static {}, Lcn/fkj233/Helper;->getSiginatureByte()[B
 
-    const/4 v0, 0x0
+    move-result-object v0
 
-    :try_start_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x1c
-
-    if-lt v1, v2, :cond_2
-
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v2
-
-    const/high16 v3, 0x8000000
-
-    invoke-virtual {v1, v2, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/appcompat/widget/ގ;->Ԭ(Landroid/content/pm/PackageInfo;)Landroid/content/pm/SigningInfo;
-
-    move-result-object v1
-
-    if-nez v1, :cond_0
-
-    return-object v0
-
-    :cond_0
-    invoke-static {v1}, Landroid/support/v4/media/session/Ϳ;->ޅ(Landroid/content/pm/SigningInfo;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
-    move-result-object p0
-
-    invoke-static {p0}, Landroidx/appcompat/widget/ގ;->Ԭ(Landroid/content/pm/PackageInfo;)Landroid/content/pm/SigningInfo;
-
-    move-result-object p0
-
-    invoke-static {p0}, Landroidx/appcompat/widget/ގ;->ތ(Landroid/content/pm/SigningInfo;)[Landroid/content/pm/Signature;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_1
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
-    move-result-object p0
-
-    invoke-static {p0}, Landroidx/appcompat/widget/ގ;->Ԭ(Landroid/content/pm/PackageInfo;)Landroid/content/pm/SigningInfo;
-
-    move-result-object p0
-
-    invoke-static {p0}, Landroid/support/v4/media/session/Ϳ;->މ(Landroid/content/pm/SigningInfo;)[Landroid/content/pm/Signature;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_2
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object p0
-
-    const/16 v2, 0x40
-
-    invoke-virtual {v1, p0, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
-    move-result-object p0
-
-    iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
-
-    :goto_0
-    if-eqz p0, :cond_3
-
-    array-length v1, p0
-
-    if-lez v1, :cond_3
-
-    const/4 v1, 0x0
-
-    aget-object p0, p0, v1
-
-    invoke-virtual {p0}, Landroid/content/pm/Signature;->toByteArray()[B
-
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p0
-
-    :catch_0
-    move-exception p0
-
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    :cond_3
     return-object v0
 .end method
 

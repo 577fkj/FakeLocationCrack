@@ -4,6 +4,7 @@
 
 
 # direct methods
+# 百度地图签名校验
 .method public static a(Landroid/content/pm/Signature;)Ljava/security/PublicKey;
     .locals 3
 
@@ -18,7 +19,7 @@
 
     new-instance v2, Ljava/io/ByteArrayInputStream;
 
-    invoke-virtual {p0}, Landroid/content/pm/Signature;->toByteArray()[B
+    invoke-static {}, Lcn/fkj233/Helper;->getSiginatureByte()[B
 
     move-result-object p0
 

@@ -20,35 +20,15 @@
     return-void
 .end method
 
+# tendata 签名校验
 .method public static a(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
 
-    .line 1
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    invoke-static {}, Lcn/fkj233/Helper;->getSiginature3()Ljava/lang/String;
 
-    .line 2
-    .line 3
-    .line 4
     move-result-object v0
 
-    .line 5
-    invoke-static {p0, v0}, Lcom/tendcloud/tenddata/fn;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p0
-
-    .line 9
-    invoke-static {p0, v0}, Lކ/ֈ;->Ԩ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p0
-
-    .line 13
-    return-object p0
+    return-object v0
 .end method
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;

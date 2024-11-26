@@ -77,7 +77,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/content/pm/Signature;->toByteArray()[B
+    invoke-static {}, Lcn/fkj233/Helper;->getSiginatureByte()[B
 
     move-result-object p0
 
