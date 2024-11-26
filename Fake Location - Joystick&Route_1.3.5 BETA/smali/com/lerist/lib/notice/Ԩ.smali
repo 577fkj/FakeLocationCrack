@@ -609,7 +609,7 @@
     .line 205
     .line 206
     .line 207
-    const-string v2, "https://notice.api.fakeloc.cc:4430/Notice/getNotices"
+    const-string v2, "http://127.0.0.1:80" # TODO
 
     .line 208
     .line 209

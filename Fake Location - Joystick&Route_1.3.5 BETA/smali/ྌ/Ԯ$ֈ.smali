@@ -27,20 +27,16 @@
 
 
 # virtual methods
+# 反序列化用户数信息
 .method public final ׯ()Lဢ/ؠ;
-    .locals 2
+    .locals 1
 
-    const-string v0, "key_userinfo"
+    # 创建 Lဢ/ؠ; 对象，传递 null
+    const/4 v1, 0x0  # 将 null 加载到 v0
+    new-instance v0, Lဢ/ؠ;  # 创建 Lဢ/ؠ; 对象
+    invoke-direct {v0, v1}, Lဢ/ؠ;-><init>(Landroid/os/Parcel;)V
 
-    const-class v1, Lဢ/ؠ;
-
-    invoke-virtual {p0, v1, v0}, Lٴ/Ԫ;->Ϳ(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lဢ/ؠ;
-
-    return-object v0
+    return-object v0  # 返回创建的对象
 .end method
 
 .method public final ؠ()Z

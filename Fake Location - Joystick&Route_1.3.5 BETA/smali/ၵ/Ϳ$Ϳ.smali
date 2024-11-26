@@ -190,7 +190,7 @@
     .line 82
     :cond_1
     :goto_0
-    const-string v1, "https://fakelocation.api.lerist.dev:4430/FakeLocation/"
+    const-string v1, "http://127.0.0.1:80" # TODO
 
     .line 83
     .line 84

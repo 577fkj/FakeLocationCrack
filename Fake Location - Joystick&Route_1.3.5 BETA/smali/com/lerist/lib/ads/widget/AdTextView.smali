@@ -1316,7 +1316,7 @@
     .line 201
     .line 202
     .line 203
-    const-string v2, "https://ads.api.fakeloc.cc:4430/Ads/getAds"
+    const-string v2, "http://127.0.0.1:80" # TODO
 
     .line 204
     .line 205

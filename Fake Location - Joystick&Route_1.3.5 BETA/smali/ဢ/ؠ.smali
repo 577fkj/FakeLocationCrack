@@ -59,64 +59,46 @@
     return-void
 .end method
 
+# 用户信息反序列化
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
+    # type:
+    const v0, 0x1
     iput v0, p0, Lဢ/ؠ;->type:I
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v0
-
+    const-string v0, "Txeaqwsshz4zvex0uv7t0sj63cja314rquo1n81c8da7f"
     iput-object v0, p0, Lဢ/ؠ;->token:Ljava/lang/String;
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v0
-
+    # key:
+    const-string v0, "PHc3Q17xpiSxf6/ZFZ4qdSOxdaR5FSgJ78pCIQF9U1zlbaZyAxOGYxMjRqqSGWgohck9n2zrbGI81y9ZvsZI2hRQSbhOdng1cWgpNKjBOpCgvhnp5Wn7BqUXqWN9EgcB7KH2ixp3CluiFaMiDZgZzoAjKb+UbsIhtK/TTE06+uI="
     iput-object v0, p0, Lဢ/ؠ;->key:Ljava/lang/String;
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
-
-    move-result-wide v0
-
+    # proindate: 2177423999000L
+    const-wide v0, 0x1faf8958018L
     iput-wide v0, p0, Lဢ/ؠ;->proindate:J
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v0
-
+    # userId: 
+    const-string v0, "Bylo63nvJ1Vu4ylcZ8gubJNOSzxvNOFU1s8F"
     iput-object v0, p0, Lဢ/ؠ;->userId:Ljava/lang/String;
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v0
-
+    # loginType:
+    const-string v0, "email"
     iput-object v0, p0, Lဢ/ؠ;->loginType:Ljava/lang/String;
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v0
-
+    # loginName:
+    const-string v0, "Crack By: 577FKJ"
     iput-object v0, p0, Lဢ/ؠ;->loginName:Ljava/lang/String;
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
-
-    move-result-wide v0
-
+    # loginTime: 1732458311046L
+    const-wide v0, 0x1935e8fed86L
     iput-wide v0, p0, Lဢ/ؠ;->loginTime:J
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lဢ/ؠ;->userName:Ljava/lang/String;
+    # userName:
+    const-string v0, "Crack By: 577FKJ"
+    iput-object v0, p0, Lဢ/ؠ;->userName:Ljava/lang/String;
 
     return-void
 .end method
@@ -206,7 +188,7 @@
 .method public setKey(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lဢ/ؠ;->key:Ljava/lang/String;
+    # iput-object p1, p0, Lဢ/ؠ;->key:Ljava/lang/String;
 
     return-void
 .end method
@@ -214,7 +196,7 @@
 .method public setLoginName(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lဢ/ؠ;->loginName:Ljava/lang/String;
+    # iput-object p1, p0, Lဢ/ؠ;->loginName:Ljava/lang/String;
 
     return-void
 .end method
@@ -222,7 +204,7 @@
 .method public setLoginTime(J)V
     .locals 0
 
-    iput-wide p1, p0, Lဢ/ؠ;->loginTime:J
+    # iput-wide p1, p0, Lဢ/ؠ;->loginTime:J
 
     return-void
 .end method
@@ -230,7 +212,7 @@
 .method public setLoginType(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lဢ/ؠ;->loginType:Ljava/lang/String;
+    # iput-object p1, p0, Lဢ/ؠ;->loginType:Ljava/lang/String;
 
     return-void
 .end method
@@ -238,7 +220,7 @@
 .method public setProindate(J)V
     .locals 0
 
-    iput-wide p1, p0, Lဢ/ؠ;->proindate:J
+    # iput-wide p1, p0, Lဢ/ؠ;->proindate:J
 
     return-void
 .end method
@@ -246,7 +228,7 @@
 .method public setToken(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lဢ/ؠ;->token:Ljava/lang/String;
+    # iput-object p1, p0, Lဢ/ؠ;->token:Ljava/lang/String;
 
     return-void
 .end method
@@ -254,7 +236,7 @@
 .method public setType(I)V
     .locals 0
 
-    iput p1, p0, Lဢ/ؠ;->type:I
+    # iput p1, p0, Lဢ/ؠ;->type:I
 
     return-void
 .end method
@@ -262,7 +244,7 @@
 .method public setUserId(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lဢ/ؠ;->userId:Ljava/lang/String;
+    # iput-object p1, p0, Lဢ/ؠ;->userId:Ljava/lang/String;
 
     return-void
 .end method
@@ -270,7 +252,7 @@
 .method public setUserName(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lဢ/ؠ;->userName:Ljava/lang/String;
+    # iput-object p1, p0, Lဢ/ؠ;->userName:Ljava/lang/String;
 
     return-void
 .end method

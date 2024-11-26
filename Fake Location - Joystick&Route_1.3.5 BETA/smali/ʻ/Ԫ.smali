@@ -51,7 +51,7 @@
 
     .line 15
     .line 16
-    const-string p1, "https://fakelocation.api.lerist.dev:4430/FakeLocation/"
+    const-string p1, "http://127.0.0.1:80" # TODO
 
     .line 17
     .line 18
@@ -154,7 +154,7 @@
     const/4 v2, 0x0
 
     .line 71
-    const-string v3, "https://api.fakeloc.cc:4430/FakeLocation/"
+    const-string v3, "http://127.0.0.1:80" # TODO
 
     .line 72
     .line 73
