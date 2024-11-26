@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="maps_names">
+        <item>@string/maps_name_baidu</item>
+        <item>@string/maps_name_google</item>
+    </string-array>
+</resources>

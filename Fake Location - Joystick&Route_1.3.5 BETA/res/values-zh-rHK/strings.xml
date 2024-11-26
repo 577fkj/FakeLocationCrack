@@ -71,7 +71,8 @@
     <string name="mtrl_picker_a11y_next_month">變更為下個月</string>
     <string name="mtrl_picker_a11y_prev_month">變更為上個月</string>
     <string name="mtrl_picker_announce_current_selection">目前選取：%1$s</string>
-    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_cancel">取消</string>
+    <string name="mtrl_picker_confirm">確定</string>
     <string name="mtrl_picker_date_header_selected">%1$s</string>
     <string name="mtrl_picker_date_header_title">請選擇日期</string>
     <string name="mtrl_picker_date_header_unselected">已選取日期</string>
