@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp16" android:paddingBottom="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lerist.lib.factory.widget.LRecyclerView android:id="@id/d_switch_mode_lrv_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    <com.lerist.lib.ads.widget.AdHtmlView android:textSize="@dimen/dp12" android:textStyle="bold" android:id="@id/d_switch_mode_adhtml" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12" />
+</LinearLayout>

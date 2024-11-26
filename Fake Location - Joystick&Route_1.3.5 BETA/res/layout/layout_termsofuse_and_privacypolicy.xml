@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a_login_ll_terms" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/a_login_cb_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/dp12" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_tv_terms" />
+    <TextView android:textSize="@dimen/dp12" android:textColor="@color/colorAccent" android:id="@id/a_login_tv_terms_termsofuse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_tv_terms_termsofuse" />
+    <TextView android:textSize="@dimen/dp12" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_tv_terms_and" />
+    <TextView android:textSize="@dimen/dp12" android:textColor="@color/colorAccent" android:id="@id/a_login_tv_terms_privacypolicy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_tv_terms_privacypolicy" />
+</LinearLayout>

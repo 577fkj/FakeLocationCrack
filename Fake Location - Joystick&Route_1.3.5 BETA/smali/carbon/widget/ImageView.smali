@@ -1,0 +1,3783 @@
+.class public Lcarbon/widget/ImageView;
+.super Landroid/widget/ImageView;
+.source "SourceFile"
+
+# interfaces
+.implements Lࡰ/Ԯ;
+.implements Lࡩ/ނ;
+.implements Lࡱ/ޅ;
+.implements Lࡧ/ނ;
+.implements Lࡱ/Ϳ;
+.implements Lࡱ/ރ;
+
+
+# static fields
+.field public static final synthetic އ:I
+
+
+# instance fields
+.field public ԩ:I
+
+.field public Ԫ:Lࡩ/֏;
+
+.field public final ԫ:Lࡨ/ֈ;
+
+.field public final Ԭ:Landroid/view/animation/Transformation;
+
+.field public ԭ:F
+
+.field public Ԯ:F
+
+.field public ԯ:Lࡰ/Ϳ;
+
+.field public ՠ:Landroid/graphics/Rect;
+
+.field public final ֈ:Lࡧ/ރ;
+
+.field public ֏:Lࡧ/Ԩ$ׯ;
+
+.field public ׯ:Lࡧ/Ԩ$ׯ;
+
+.field public ؠ:Lʾ/Ϳ;
+
+.field public ހ:Landroid/content/res/ColorStateList;
+
+.field public ށ:Landroid/graphics/PorterDuff$Mode;
+
+.field public ނ:Landroid/content/res/ColorStateList;
+
+.field public ރ:Landroid/graphics/PorterDuff$Mode;
+
+.field public ބ:Z
+
+.field public final ޅ:Lcarbon/widget/ImageView$Ԫ;
+
+.field public final ކ:Lcarbon/widget/ImageView$Ԭ;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Landroid/graphics/PorterDuffXfermode;
+
+    sget-object v1, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-direct {v0, v1}, Landroid/graphics/PorterDuffXfermode;-><init>(Landroid/graphics/PorterDuff$Mode;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 2
+
+    const v0, 0x7f0400ba
+
+    invoke-direct {p0, p1, p2, v0}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    new-instance p1, Landroid/graphics/Paint;
+
+    const/4 v1, 0x3
+
+    invoke-direct {p1, v1}, Landroid/graphics/Paint;-><init>(I)V
+
+    new-instance p1, Lࡨ/ֈ;
+
+    invoke-direct {p1}, Lࡨ/ֈ;-><init>()V
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ԫ:Lࡨ/ֈ;
+
+    new-instance p1, Landroid/view/animation/Transformation;
+
+    invoke-direct {p1}, Landroid/view/animation/Transformation;-><init>()V
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->Ԭ:Landroid/view/animation/Transformation;
+
+    const/4 p1, 0x0
+
+    iput p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iput p1, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    new-instance p1, Lࡧ/ރ;
+
+    invoke-direct {p1, p0}, Lࡧ/ރ;-><init>(Lࡧ/ނ;)V
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ֈ:Lࡧ/ރ;
+
+    sget-object p1, Lࡧ/Ԩ$ׯ;->ԩ:Lࡧ/Ԩ$ׯ;
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->֏:Lࡧ/Ԩ$ׯ;
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ׯ:Lࡧ/Ԩ$ׯ;
+
+    new-instance p1, Lcarbon/widget/ImageView$Ԫ;
+
+    invoke-direct {p1, p0}, Lcarbon/widget/ImageView$Ԫ;-><init>(Lcarbon/widget/ImageView;)V
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ޅ:Lcarbon/widget/ImageView$Ԫ;
+
+    new-instance p1, Lcarbon/widget/ImageView$Ԭ;
+
+    invoke-direct {p1, p0}, Lcarbon/widget/ImageView$Ԭ;-><init>(Lcarbon/widget/ImageView;)V
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ކ:Lcarbon/widget/ImageView$Ԭ;
+
+    invoke-virtual {p0, p2, v0}, Lcarbon/widget/ImageView;->ԩ(Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 1
+
+    const p3, 0x7f0400aa
+
+    invoke-direct {p0, p1, p2, p3}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    new-instance p1, Landroid/graphics/Paint;
+
+    const/4 v0, 0x3
+
+    invoke-direct {p1, v0}, Landroid/graphics/Paint;-><init>(I)V
+
+    new-instance p1, Lࡨ/ֈ;
+
+    invoke-direct {p1}, Lࡨ/ֈ;-><init>()V
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ԫ:Lࡨ/ֈ;
+
+    new-instance p1, Landroid/view/animation/Transformation;
+
+    invoke-direct {p1}, Landroid/view/animation/Transformation;-><init>()V
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->Ԭ:Landroid/view/animation/Transformation;
+
+    const/4 p1, 0x0
+
+    iput p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iput p1, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    new-instance p1, Lࡧ/ރ;
+
+    invoke-direct {p1, p0}, Lࡧ/ރ;-><init>(Lࡧ/ނ;)V
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ֈ:Lࡧ/ރ;
+
+    sget-object p1, Lࡧ/Ԩ$ׯ;->ԩ:Lࡧ/Ԩ$ׯ;
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->֏:Lࡧ/Ԩ$ׯ;
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ׯ:Lࡧ/Ԩ$ׯ;
+
+    new-instance p1, Lcarbon/widget/ImageView$Ԫ;
+
+    invoke-direct {p1, p0}, Lcarbon/widget/ImageView$Ԫ;-><init>(Lcarbon/widget/ImageView;)V
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ޅ:Lcarbon/widget/ImageView$Ԫ;
+
+    new-instance p1, Lcarbon/widget/ImageView$Ԭ;
+
+    invoke-direct {p1, p0}, Lcarbon/widget/ImageView$Ԭ;-><init>(Lcarbon/widget/ImageView;)V
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ކ:Lcarbon/widget/ImageView$Ԭ;
+
+    invoke-virtual {p0, p2, p3}, Lcarbon/widget/ImageView;->ԩ(Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method public static synthetic Ϳ(Lcarbon/widget/ImageView;I)V
+    .locals 0
+
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 5
+
+    invoke-virtual {p0}, Landroid/view/View;->getAnimation()Landroid/view/animation/Animation;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/view/animation/Animation;->hasStarted()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->getDrawingTime()J
+
+    move-result-wide v1
+
+    iget-object v3, p0, Lcarbon/widget/ImageView;->Ԭ:Landroid/view/animation/Transformation;
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/view/animation/Animation;->getTransformation(JLandroid/view/animation/Transformation;)Z
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [F
+
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    aput v1, v0, v2
+
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
+
+    move-result v1
+
+    const/4 v3, 0x1
+
+    aput v1, v0, v3
+
+    aget v1, v0, v2
+
+    invoke-static {p0}, Lࢦ/Ϳ;->ގ(Landroid/view/View;)F
+
+    move-result v4
+
+    sub-float/2addr v1, v4
+
+    aput v1, v0, v2
+
+    aget v1, v0, v3
+
+    invoke-static {p0}, Lࢦ/Ϳ;->ޏ(Landroid/view/View;)F
+
+    move-result v4
+
+    sub-float/2addr v1, v4
+
+    aput v1, v0, v3
+
+    aget v0, v0, v2
+
+    invoke-virtual {p1, v0, v1}, Landroid/view/MotionEvent;->setLocation(FF)V
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v1
+
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
+
+    move-result v2
+
+    invoke-interface {v0, v1, v2}, Lࡩ/֏;->setHotspot(FF)V
+
+    :cond_1
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final draw(Landroid/graphics/Canvas;)V
+    .locals 2
+
+    iget v0, p0, Lcarbon/widget/ImageView;->ԩ:I
+
+    if-lez v0, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    move-result v0
+
+    if-lez v0, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->draw(Landroid/graphics/Canvas;)V
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    invoke-interface {v0, p1}, Lࡩ/֏;->draw(Landroid/graphics/Canvas;)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public final drawableStateChanged()V
+    .locals 2
+
+    invoke-super {p0}, Landroid/widget/ImageView;->drawableStateChanged()V
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_0
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lࡩ/֏;->setState([I)Z
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ֈ:Lࡧ/ރ;
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lࡧ/ރ;->Ԩ([I)V
+
+    :cond_1
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ހ:Landroid/content/res/ColorStateList;
+
+    if-eqz v0, :cond_2
+
+    instance-of v1, v0, Lࡧ/ށ;
+
+    if-eqz v1, :cond_2
+
+    check-cast v0, Lࡧ/ށ;
+
+    invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lࡧ/ށ;->Ԫ([I)V
+
+    :cond_2
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ނ:Landroid/content/res/ColorStateList;
+
+    if-eqz v0, :cond_3
+
+    instance-of v1, v0, Lࡧ/ށ;
+
+    if-eqz v1, :cond_3
+
+    check-cast v0, Lࡧ/ށ;
+
+    invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lࡧ/ށ;->Ԫ([I)V
+
+    :cond_3
+    return-void
+.end method
+
+.method public getAlpha()F
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget v0, v0, Lʹ/Ϳ;->Ԭ:F
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getAlpha()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    return v0
+.end method
+
+.method public getAnimator()Lʾ/Ϳ;
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ؠ:Lʾ/Ϳ;
+
+    return-object v0
+.end method
+
+.method public getBackgroundTint()Landroid/content/res/ColorStateList;
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ނ:Landroid/content/res/ColorStateList;
+
+    return-object v0
+.end method
+
+.method public getBackgroundTintMode()Landroid/graphics/PorterDuff$Mode;
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ރ:Landroid/graphics/PorterDuff$Mode;
+
+    return-object v0
+.end method
+
+.method public getCornerRadius()I
+    .locals 1
+
+    iget v0, p0, Lcarbon/widget/ImageView;->ԩ:I
+
+    return v0
+.end method
+
+.method public getElevation()F
+    .locals 1
+
+    iget v0, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    return v0
+.end method
+
+.method public final getHitRect(Landroid/graphics/Rect;)V
+    .locals 11
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    const/4 v1, 0x4
+
+    iget-object v2, p0, Lcarbon/widget/ImageView;->Ԭ:Landroid/view/animation/Transformation;
+
+    const/4 v3, 0x3
+
+    const/4 v4, 0x2
+
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
+    if-nez v0, :cond_1
+
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->getHitRect(Landroid/graphics/Rect;)V
+
+    invoke-virtual {p0}, Landroid/view/View;->getAnimation()Landroid/view/animation/Animation;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/view/animation/Animation;->hasStarted()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_0
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v7
+
+    invoke-virtual {v0, v7, v8, v2}, Landroid/view/animation/Animation;->getTransformation(JLandroid/view/animation/Transformation;)Z
+
+    new-array v0, v1, [F
+
+    iget v1, p1, Landroid/graphics/Rect;->left:I
+
+    int-to-float v1, v1
+
+    aput v1, v0, v6
+
+    iget v2, p1, Landroid/graphics/Rect;->top:I
+
+    int-to-float v2, v2
+
+    aput v2, v0, v5
+
+    iget v2, p1, Landroid/graphics/Rect;->right:I
+
+    int-to-float v2, v2
+
+    aput v2, v0, v4
+
+    iget v2, p1, Landroid/graphics/Rect;->bottom:I
+
+    int-to-float v2, v2
+
+    aput v2, v0, v3
+
+    invoke-static {p0}, Lࢦ/Ϳ;->ގ(Landroid/view/View;)F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    aput v2, v0, v6
+
+    aget v1, v0, v5
+
+    invoke-static {p0}, Lࢦ/Ϳ;->ޏ(Landroid/view/View;)F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    aput v2, v0, v5
+
+    aget v1, v0, v4
+
+    invoke-static {p0}, Lࢦ/Ϳ;->ގ(Landroid/view/View;)F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    aput v2, v0, v4
+
+    aget v1, v0, v3
+
+    invoke-static {p0}, Lࢦ/Ϳ;->ޏ(Landroid/view/View;)F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    aput v2, v0, v3
+
+    aget v1, v0, v6
+
+    float-to-int v1, v1
+
+    aget v3, v0, v5
+
+    float-to-int v3, v3
+
+    aget v0, v0, v4
+
+    float-to-int v0, v0
+
+    float-to-int v2, v2
+
+    invoke-virtual {p1, v1, v3, v0, v2}, Landroid/graphics/Rect;->set(IIII)V
+
+    :cond_0
+    return-void
+
+    :cond_1
+    invoke-virtual {p0}, Landroid/view/View;->getLeft()I
+
+    move-result v0
+
+    iget-object v7, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->left:I
+
+    sub-int/2addr v0, v7
+
+    invoke-virtual {p0}, Landroid/view/View;->getTop()I
+
+    move-result v7
+
+    iget-object v8, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    iget v8, v8, Landroid/graphics/Rect;->top:I
+
+    sub-int/2addr v7, v8
+
+    invoke-virtual {p0}, Landroid/view/View;->getRight()I
+
+    move-result v8
+
+    iget-object v9, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    iget v9, v9, Landroid/graphics/Rect;->right:I
+
+    add-int/2addr v8, v9
+
+    invoke-virtual {p0}, Landroid/view/View;->getBottom()I
+
+    move-result v9
+
+    iget-object v10, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    iget v10, v10, Landroid/graphics/Rect;->bottom:I
+
+    add-int/2addr v9, v10
+
+    invoke-virtual {p1, v0, v7, v8, v9}, Landroid/graphics/Rect;->set(IIII)V
+
+    invoke-virtual {p0}, Landroid/view/View;->getAnimation()Landroid/view/animation/Animation;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    invoke-virtual {v0}, Landroid/view/animation/Animation;->hasStarted()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v7
+
+    invoke-virtual {v0, v7, v8, v2}, Landroid/view/animation/Animation;->getTransformation(JLandroid/view/animation/Transformation;)Z
+
+    new-array v0, v1, [F
+
+    iget v1, p1, Landroid/graphics/Rect;->left:I
+
+    int-to-float v1, v1
+
+    aput v1, v0, v6
+
+    iget v2, p1, Landroid/graphics/Rect;->top:I
+
+    int-to-float v2, v2
+
+    aput v2, v0, v5
+
+    iget v2, p1, Landroid/graphics/Rect;->right:I
+
+    int-to-float v2, v2
+
+    aput v2, v0, v4
+
+    iget v2, p1, Landroid/graphics/Rect;->bottom:I
+
+    int-to-float v2, v2
+
+    aput v2, v0, v3
+
+    invoke-static {p0}, Lࢦ/Ϳ;->ގ(Landroid/view/View;)F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    aput v2, v0, v6
+
+    aget v1, v0, v5
+
+    invoke-static {p0}, Lࢦ/Ϳ;->ޏ(Landroid/view/View;)F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    aput v2, v0, v5
+
+    aget v1, v0, v4
+
+    invoke-static {p0}, Lࢦ/Ϳ;->ގ(Landroid/view/View;)F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    aput v2, v0, v4
+
+    aget v1, v0, v3
+
+    invoke-static {p0}, Lࢦ/Ϳ;->ޏ(Landroid/view/View;)F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    aput v2, v0, v3
+
+    aget v1, v0, v6
+
+    float-to-int v1, v1
+
+    aget v3, v0, v5
+
+    float-to-int v3, v3
+
+    aget v0, v0, v4
+
+    float-to-int v0, v0
+
+    float-to-int v2, v2
+
+    invoke-virtual {p1, v1, v3, v0, v2}, Landroid/graphics/Rect;->set(IIII)V
+
+    :cond_2
+    return-void
+.end method
+
+.method public getInAnimation()Lࡧ/Ԩ$ׯ;
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->֏:Lࡧ/Ԩ$ׯ;
+
+    return-object v0
+.end method
+
+.method public getOutAnimation()Lࡧ/Ԩ$ׯ;
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ׯ:Lࡧ/Ԩ$ׯ;
+
+    return-object v0
+.end method
+
+.method public getPivotX()F
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget v0, v0, Lʹ/Ϳ;->ԭ:F
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getPivotX()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    return v0
+.end method
+
+.method public getPivotY()F
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget v0, v0, Lʹ/Ϳ;->Ԯ:F
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getPivotY()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    return v0
+.end method
+
+.method public getRippleDrawable()Lࡩ/֏;
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    return-object v0
+.end method
+
+.method public getRotation()F
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget v0, v0, Lʹ/Ϳ;->ֈ:F
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getRotation()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    return v0
+.end method
+
+.method public getRotationX()F
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget v0, v0, Lʹ/Ϳ;->ԯ:F
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getRotationX()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    return v0
+.end method
+
+.method public getRotationY()F
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget v0, v0, Lʹ/Ϳ;->ՠ:F
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getRotationY()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    return v0
+.end method
+
+.method public getScaleX()F
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget v0, v0, Lʹ/Ϳ;->֏:F
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getScaleX()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    return v0
+.end method
+
+.method public getScaleY()F
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget v0, v0, Lʹ/Ϳ;->ׯ:F
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getScaleY()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    return v0
+.end method
+
+.method public getShadow()Lࡰ/Ԩ;
+    .locals 2
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getElevation()F
+
+    move-result v0
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getTranslationZ()F
+
+    move-result v1
+
+    add-float/2addr v1, v0
+
+    const v0, 0x3c23d70a    # 0.01f
+
+    cmpl-float v0, v1, v0
+
+    if-ltz v0, :cond_2
+
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    move-result v0
+
+    if-lez v0, :cond_2
+
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
+    move-result v0
+
+    if-lez v0, :cond_2
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ԯ:Lࡰ/Ϳ;
+
+    if-eqz v0, :cond_0
+
+    iget v0, v0, Lࡰ/Ԩ;->Ϳ:F
+
+    cmpl-float v0, v0, v1
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    invoke-static {v1, p0}, Lࡰ/Ԫ;->Ԩ(FLandroid/view/View;)Lࡰ/Ϳ;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcarbon/widget/ImageView;->ԯ:Lࡰ/Ϳ;
+
+    :cond_1
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ԯ:Lࡰ/Ϳ;
+
+    return-object v0
+
+    :cond_2
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getShadowShape()Lࡰ/Ԭ;
+    .locals 2
+
+    iget v0, p0, Lcarbon/widget/ImageView;->ԩ:I
+
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    move-result v1
+
+    div-int/lit8 v1, v1, 0x2
+
+    if-ne v0, v1, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    move-result v0
+
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
+    move-result v1
+
+    if-ne v0, v1, :cond_0
+
+    sget-object v0, Lࡰ/Ԭ;->ԫ:Lࡰ/Ԭ;
+
+    return-object v0
+
+    :cond_0
+    iget v0, p0, Lcarbon/widget/ImageView;->ԩ:I
+
+    if-lez v0, :cond_1
+
+    sget-object v0, Lࡰ/Ԭ;->Ԫ:Lࡰ/Ԭ;
+
+    return-object v0
+
+    :cond_1
+    sget-object v0, Lࡰ/Ԭ;->ԩ:Lࡰ/Ԭ;
+
+    return-object v0
+.end method
+
+.method public getStateAnimator()Lࡧ/ރ;
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ֈ:Lࡧ/ރ;
+
+    return-object v0
+.end method
+
+.method public getTint()Landroid/content/res/ColorStateList;
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ހ:Landroid/content/res/ColorStateList;
+
+    return-object v0
+.end method
+
+.method public getTintMode()Landroid/graphics/PorterDuff$Mode;
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ށ:Landroid/graphics/PorterDuff$Mode;
+
+    return-object v0
+.end method
+
+.method public getTouchMargin()Landroid/graphics/Rect;
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    return-object v0
+.end method
+
+.method public getTranslationX()F
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget v0, v0, Lʹ/Ϳ;->ؠ:F
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getTranslationX()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    return v0
+.end method
+
+.method public getTranslationY()F
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget v0, v0, Lʹ/Ϳ;->ހ:F
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getTranslationY()F
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    :goto_0
+    return v0
+.end method
+
+.method public getTranslationZ()F
+    .locals 1
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    return v0
+.end method
+
+.method public getX()F
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lʹ/Ϳ;->Ԩ()F
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getX()F
+
+    move-result v0
+
+    :goto_0
+    return v0
+.end method
+
+.method public getY()F
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lʹ/Ϳ;->ԫ()F
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0}, Landroid/widget/ImageView;->getY()F
+
+    move-result v0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final invalidate()V
+    .locals 2
+
+    invoke-super {p0}, Landroid/widget/ImageView;->invalidate()V
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    instance-of v0, v0, Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getElevation()F
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    cmpl-float v0, v0, v1
+
+    if-gtz v0, :cond_2
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getCornerRadius()I
+
+    move-result v0
+
+    if-lez v0, :cond_3
+
+    :cond_2
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public final invalidate(IIII)V
+    .locals 2
+
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/ImageView;->invalidate(IIII)V
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    instance-of v0, v0, Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Landroid/view/View;->invalidate(IIII)V
+
+    :cond_1
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getElevation()F
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    cmpl-float v0, v0, v1
+
+    if-gtz v0, :cond_2
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getCornerRadius()I
+
+    move-result v0
+
+    if-lez v0, :cond_3
+
+    :cond_2
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Landroid/view/View;->invalidate(IIII)V
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public final invalidate(Landroid/graphics/Rect;)V
+    .locals 2
+
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->invalidate(Landroid/graphics/Rect;)V
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    instance-of v0, v0, Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0, p1}, Landroid/view/View;->invalidate(Landroid/graphics/Rect;)V
+
+    :cond_1
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getElevation()F
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    cmpl-float v0, v0, v1
+
+    if-gtz v0, :cond_2
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getCornerRadius()I
+
+    move-result v0
+
+    if-lez v0, :cond_3
+
+    :cond_2
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0, p1}, Landroid/view/View;->invalidate(Landroid/graphics/Rect;)V
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public final invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
+
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p1, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz p1, :cond_1
+
+    invoke-interface {p1}, Lࡩ/֏;->Ԩ()I
+
+    move-result p1
+
+    const/4 v0, 0x3
+
+    if-ne p1, v0, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getElevation()F
+
+    move-result p1
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-gtz p1, :cond_2
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getCornerRadius()I
+
+    move-result p1
+
+    if-lez p1, :cond_3
+
+    :cond_2
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public onLayout(ZIIII)V
+    .locals 0
+
+    .line 1
+    invoke-super/range {p0 .. p5}, Landroid/widget/ImageView;->onLayout(ZIIII)V
+
+    .line 2
+    .line 3
+    .line 4
+    if-nez p1, :cond_0
+
+    .line 5
+    .line 6
+    return-void
+
+    .line 7
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 8
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ԯ:Lࡰ/Ϳ;
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p1
+
+    .line 14
+    if-eqz p1, :cond_1
+
+    .line 15
+    .line 16
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    instance-of p1, p1, Landroid/view/View;
+
+    .line 21
+    .line 22
+    if-eqz p1, :cond_1
+
+    .line 23
+    .line 24
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    check-cast p1, Landroid/view/View;
+
+    .line 29
+    .line 30
+    invoke-virtual {p1}, Landroid/view/View;->postInvalidate()V
+
+    .line 31
+    .line 32
+    .line 33
+    :cond_1
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p1
+
+    .line 37
+    if-eqz p1, :cond_4
+
+    .line 38
+    .line 39
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
+    .line 40
+    .line 41
+    .line 42
+    move-result p1
+
+    .line 43
+    if-nez p1, :cond_2
+
+    .line 44
+    .line 45
+    goto :goto_1
+
+    .line 46
+    :cond_2
+    iget p1, p0, Lcarbon/widget/ImageView;->ԩ:I
+
+    .line 47
+    .line 48
+    if-lez p1, :cond_3
+
+    .line 49
+    .line 50
+    const/4 p1, 0x1
+
+    .line 51
+    invoke-virtual {p0, p1}, Landroid/view/View;->setClipToOutline(Z)V
+
+    .line 52
+    .line 53
+    .line 54
+    sget-object p1, Lࡰ/Ԭ;->Ԭ:Lࡰ/Ԭ$Ϳ;
+
+    .line 55
+    .line 56
+    goto :goto_0
+
+    .line 57
+    :cond_3
+    sget-object p1, Landroid/view/ViewOutlineProvider;->BOUNDS:Landroid/view/ViewOutlineProvider;
+
+    .line 58
+    .line 59
+    :goto_0
+    invoke-virtual {p0, p1}, Landroid/view/View;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
+
+    .line 60
+    .line 61
+    .line 62
+    iget-object p1, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    .line 63
+    .line 64
+    if-eqz p1, :cond_4
+
+    .line 65
+    .line 66
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    .line 67
+    .line 68
+    .line 69
+    move-result p2
+
+    .line 70
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
+    .line 71
+    .line 72
+    .line 73
+    move-result p3
+
+    .line 74
+    const/4 p4, 0x0
+
+    .line 75
+    invoke-interface {p1, p4, p4, p2, p3}, Lࡩ/֏;->setBounds(IIII)V
+
+    .line 76
+    .line 77
+    .line 78
+    :cond_4
+    :goto_1
+    return-void
+.end method
+
+.method public final postInvalidate()V
+    .locals 2
+
+    invoke-super {p0}, Landroid/widget/ImageView;->postInvalidate()V
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    instance-of v0, v0, Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->postInvalidate()V
+
+    :cond_1
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getElevation()F
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    cmpl-float v0, v0, v1
+
+    if-gtz v0, :cond_2
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getCornerRadius()I
+
+    move-result v0
+
+    if-lez v0, :cond_3
+
+    :cond_2
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->postInvalidate()V
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public final postInvalidate(IIII)V
+    .locals 2
+
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/ImageView;->postInvalidate(IIII)V
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    instance-of v0, v0, Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Landroid/view/View;->postInvalidate(IIII)V
+
+    :cond_1
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getElevation()F
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    cmpl-float v0, v0, v1
+
+    if-gtz v0, :cond_2
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getCornerRadius()I
+
+    move-result v0
+
+    if-lez v0, :cond_3
+
+    :cond_2
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Landroid/view/View;->postInvalidate(IIII)V
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public final postInvalidateDelayed(J)V
+    .locals 2
+
+    invoke-super {p0, p1, p2}, Landroid/widget/ImageView;->postInvalidateDelayed(J)V
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    instance-of v0, v0, Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0, p1, p2}, Landroid/view/View;->postInvalidateDelayed(J)V
+
+    :cond_1
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getElevation()F
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    cmpl-float v0, v0, v1
+
+    if-gtz v0, :cond_2
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getCornerRadius()I
+
+    move-result v0
+
+    if-lez v0, :cond_3
+
+    :cond_2
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-virtual {v0, p1, p2}, Landroid/view/View;->postInvalidateDelayed(J)V
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public final postInvalidateDelayed(JIIII)V
+    .locals 8
+
+    invoke-super/range {p0 .. p6}, Landroid/widget/ImageView;->postInvalidateDelayed(JIIII)V
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    instance-of v0, v0, Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, Landroid/view/View;
+
+    move-wide v2, p1
+
+    move v4, p3
+
+    move v5, p4
+
+    move v6, p5
+
+    move v7, p6
+
+    invoke-virtual/range {v1 .. v7}, Landroid/view/View;->postInvalidateDelayed(JIIII)V
+
+    :cond_1
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getElevation()F
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    cmpl-float v0, v0, v1
+
+    if-gtz v0, :cond_2
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->getCornerRadius()I
+
+    move-result v0
+
+    if-lez v0, :cond_3
+
+    :cond_2
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, Landroid/view/View;
+
+    move-wide v2, p1
+
+    move v4, p3
+
+    move v5, p4
+
+    move v6, p5
+
+    move v7, p6
+
+    invoke-virtual/range {v1 .. v7}, Landroid/view/View;->postInvalidateDelayed(JIIII)V
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public setAlpha(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->Ԯ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setAlpha(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setAnimateColorChangesEnabled(Z)V
+    .locals 1
+
+    iput-boolean p1, p0, Lcarbon/widget/ImageView;->ބ:Z
+
+    iget-object p1, p0, Lcarbon/widget/ImageView;->ހ:Landroid/content/res/ColorStateList;
+
+    if-eqz p1, :cond_0
+
+    instance-of v0, p1, Lࡧ/ށ;
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ޅ:Lcarbon/widget/ImageView$Ԫ;
+
+    invoke-static {p1, v0}, Lࡧ/ށ;->ԩ(Landroid/content/res/ColorStateList;Lʾ/ށ$ֈ;)Lࡧ/ށ;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcarbon/widget/ImageView;->setTint(Landroid/content/res/ColorStateList;)V
+
+    :cond_0
+    iget-object p1, p0, Lcarbon/widget/ImageView;->ނ:Landroid/content/res/ColorStateList;
+
+    if-eqz p1, :cond_1
+
+    instance-of v0, p1, Lࡧ/ށ;
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ކ:Lcarbon/widget/ImageView$Ԭ;
+
+    invoke-static {p1, v0}, Lࡧ/ށ;->ԩ(Landroid/content/res/ColorStateList;Lʾ/ށ$ֈ;)Lࡧ/ށ;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcarbon/widget/ImageView;->setBackgroundTint(Landroid/content/res/ColorStateList;)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setBackground(Landroid/graphics/drawable/Drawable;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcarbon/widget/ImageView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    return-void
+.end method
+
+.method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    .locals 2
+
+    instance-of v0, p1, Lࡩ/֏;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lࡩ/֏;
+
+    invoke-virtual {p0, p1}, Lcarbon/widget/ImageView;->setRippleDrawable(Lࡩ/֏;)V
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    const/4 v1, 0x0
+
+    invoke-interface {v0, v1}, Lࡩ/֏;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
+
+    iput-object v1, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    :cond_1
+    if-nez p1, :cond_2
+
+    iget-object p1, p0, Lcarbon/widget/ImageView;->ԫ:Lࡨ/ֈ;
+
+    :cond_2
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->ԫ()V
+
+    return-void
+.end method
+
+.method public setBackgroundTint(I)V
+    .locals 1
+
+    if-nez p1, :cond_0
+
+    new-instance p1, Lࡨ/Ԯ;
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-direct {p1, v0}, Lࡨ/Ԯ;-><init>(Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-virtual {p0, p1}, Lcarbon/widget/ImageView;->setBackgroundTint(Landroid/content/res/ColorStateList;)V
+
+    return-void
+.end method
+
+.method public setBackgroundTint(Landroid/content/res/ColorStateList;)V
+    .locals 1
+
+    iget-boolean v0, p0, Lcarbon/widget/ImageView;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    instance-of v0, p1, Lࡧ/ށ;
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ކ:Lcarbon/widget/ImageView$Ԭ;
+
+    invoke-static {p1, v0}, Lࡧ/ށ;->ԩ(Landroid/content/res/ColorStateList;Lʾ/ށ$ֈ;)Lࡧ/ށ;
+
+    move-result-object p1
+
+    :cond_0
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ނ:Landroid/content/res/ColorStateList;
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->Ԫ()V
+
+    return-void
+.end method
+
+.method public setBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
+    .locals 0
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ރ:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->Ԫ()V
+
+    return-void
+.end method
+
+.method public setCornerRadius(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcarbon/widget/ImageView;->ԩ:I
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ԯ:Lࡰ/Ϳ;
+
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    if-eqz p1, :cond_0
+
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    instance-of p1, p1, Landroid/view/View;
+
+    .line 17
+    .line 18
+    if-eqz p1, :cond_0
+
+    .line 19
+    .line 20
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Landroid/view/View;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Landroid/view/View;->postInvalidate()V
+
+    .line 27
+    .line 28
+    .line 29
+    :cond_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԩ:I
+
+    .line 30
+    .line 31
+    if-lez p1, :cond_1
+
+    .line 32
+    .line 33
+    const/4 p1, 0x1
+
+    .line 34
+    invoke-virtual {p0, p1}, Landroid/view/View;->setClipToOutline(Z)V
+
+    .line 35
+    .line 36
+    .line 37
+    sget-object p1, Lࡰ/Ԭ;->Ԭ:Lࡰ/Ԭ$Ϳ;
+
+    .line 38
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_1
+    sget-object p1, Landroid/view/ViewOutlineProvider;->BOUNDS:Landroid/view/ViewOutlineProvider;
+
+    .line 41
+    .line 42
+    :goto_0
+    invoke-virtual {p0, p1}, Landroid/view/View;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
+
+    .line 43
+    .line 44
+    .line 45
+    return-void
+.end method
+
+.method public declared-synchronized setElevation(F)V
+    .locals 1
+
+    monitor-enter p0
+
+    :try_start_0
+    iget v0, p0, Lcarbon/widget/ImageView;->ԭ:F
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    cmpl-float v0, p1, v0
+
+    if-nez v0, :cond_0
+
+    monitor-exit p0
+
+    return-void
+
+    :cond_0
+    :try_start_1
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setElevation(F)V
+
+    iput p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->postInvalidate()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :cond_1
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method public setEnabled(Z)V
+    .locals 0
+
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setEnabled(Z)V
+
+    return-void
+.end method
+
+.method public setImageResource(I)V
+    .locals 2
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getResourceTypeName(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "raw"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Lࡨ/ؠ;
+
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1, p1}, Lࡨ/ؠ;-><init>(Landroid/content/res/Resources;I)V
+
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public setInAnimation(Lࡧ/Ԩ$ׯ;)V
+    .locals 0
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->֏:Lࡧ/Ԩ$ׯ;
+
+    return-void
+.end method
+
+.method public setOutAnimation(Lࡧ/Ԩ$ׯ;)V
+    .locals 0
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ׯ:Lࡧ/Ԩ$ׯ;
+
+    return-void
+.end method
+
+.method public setPivotX(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->ԯ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setPivotX(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setPivotY(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->ՠ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setPivotY(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setRippleDrawable(Lࡩ/֏;)V
+    .locals 4
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    const/4 v1, 0x2
+
+    if-eqz v0, :cond_1
+
+    const/4 v2, 0x0
+
+    invoke-interface {v0, v2}, Lࡩ/֏;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    invoke-interface {v0}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    if-ne v0, v1, :cond_1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    invoke-interface {v0}, Lࡩ/֏;->ԩ()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ԫ:Lࡨ/ֈ;
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    invoke-interface {v0}, Lࡩ/֏;->ԩ()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-super {p0, v0}, Landroid/widget/ImageView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    :cond_1
+    if-eqz p1, :cond_2
+
+    invoke-interface {p1, p0}, Lࡩ/֏;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
+
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    move-result v0
+
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    invoke-interface {p1, v3, v3, v0, v2}, Lࡩ/֏;->setBounds(IIII)V
+
+    invoke-interface {p1}, Lࡩ/֏;->Ԩ()I
+
+    move-result v0
+
+    if-ne v0, v1, :cond_2
+
+    move-object v0, p1
+
+    check-cast v0, Landroid/graphics/drawable/Drawable;
+
+    invoke-super {p0, v0}, Landroid/widget/ImageView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    :cond_2
+    iput-object p1, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    return-void
+.end method
+
+.method public setRotation(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->ֈ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setRotation(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setRotationX(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->֏(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setRotationX(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setRotationY(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->ׯ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setRotationY(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setScaleX(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->ؠ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setScaleX(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setScaleY(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->ށ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setScaleY(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setTint(I)V
+    .locals 1
+
+    if-nez p1, :cond_0
+
+    new-instance p1, Lࡨ/Ԯ;
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-direct {p1, v0}, Lࡨ/Ԯ;-><init>(Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-virtual {p0, p1}, Lcarbon/widget/ImageView;->setTint(Landroid/content/res/ColorStateList;)V
+
+    return-void
+.end method
+
+.method public setTint(Landroid/content/res/ColorStateList;)V
+    .locals 1
+
+    iget-boolean v0, p0, Lcarbon/widget/ImageView;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    instance-of v0, p1, Lࡧ/ށ;
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ޅ:Lcarbon/widget/ImageView$Ԫ;
+
+    invoke-static {p1, v0}, Lࡧ/ށ;->ԩ(Landroid/content/res/ColorStateList;Lʾ/ށ$ֈ;)Lࡧ/ށ;
+
+    move-result-object p1
+
+    :cond_0
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ހ:Landroid/content/res/ColorStateList;
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->ԫ()V
+
+    return-void
+.end method
+
+.method public setTintMode(Landroid/graphics/PorterDuff$Mode;)V
+    .locals 0
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ށ:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-virtual {p0}, Lcarbon/widget/ImageView;->ԫ()V
+
+    return-void
+.end method
+
+.method public setTouchMarginBottom(I)V
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    iput p1, v0, Landroid/graphics/Rect;->bottom:I
+
+    return-void
+.end method
+
+.method public setTouchMarginLeft(I)V
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    iput p1, v0, Landroid/graphics/Rect;->left:I
+
+    return-void
+.end method
+
+.method public setTouchMarginRight(I)V
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    iput p1, v0, Landroid/graphics/Rect;->right:I
+
+    return-void
+.end method
+
+.method public setTouchMarginTop(I)V
+    .locals 1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    iput p1, v0, Landroid/graphics/Rect;->top:I
+
+    return-void
+.end method
+
+.method public setTranslationX(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->ރ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setTranslationX(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public setTranslationY(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->ބ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setTranslationY(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public declared-synchronized setTranslationZ(F)V
+    .locals 1
+
+    monitor-enter p0
+
+    :try_start_0
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    cmpl-float v0, p1, v0
+
+    if-nez v0, :cond_0
+
+    monitor-exit p0
+
+    return-void
+
+    :cond_0
+    :try_start_1
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setTranslationZ(F)V
+
+    iput p1, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->postInvalidate()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :cond_1
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method public setVisibility(I)V
+    .locals 2
+
+    sget-object v0, Lࡧ/Ԩ$ׯ;->ԩ:Lࡧ/Ԩ$ׯ;
+
+    if-nez p1, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    iget-object v1, p0, Lcarbon/widget/ImageView;->ؠ:Lʾ/Ϳ;
+
+    if-eqz v1, :cond_3
+
+    :cond_0
+    iget-object v1, p0, Lcarbon/widget/ImageView;->ؠ:Lʾ/Ϳ;
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v1}, Lʾ/Ϳ;->cancel()V
+
+    :cond_1
+    iget-object v1, p0, Lcarbon/widget/ImageView;->֏:Lࡧ/Ԩ$ׯ;
+
+    if-eq v1, v0, :cond_2
+
+    new-instance v0, Lcarbon/widget/ImageView$Ϳ;
+
+    invoke-direct {v0, p0}, Lcarbon/widget/ImageView$Ϳ;-><init>(Lcarbon/widget/ImageView;)V
+
+    invoke-static {p0, v1, v0}, Lࡧ/Ԩ;->Ϳ(Landroid/view/View;Lࡧ/Ԩ$ׯ;Lʾ/Ԩ;)Lʾ/ށ;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcarbon/widget/ImageView;->ؠ:Lʾ/Ϳ;
+
+    :cond_2
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    goto :goto_0
+
+    :cond_3
+    if-eqz p1, :cond_7
+
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    iget-object v1, p0, Lcarbon/widget/ImageView;->ؠ:Lʾ/Ϳ;
+
+    if-eqz v1, :cond_7
+
+    :cond_4
+    iget-object v1, p0, Lcarbon/widget/ImageView;->ؠ:Lʾ/Ϳ;
+
+    if-eqz v1, :cond_5
+
+    invoke-virtual {v1}, Lʾ/Ϳ;->cancel()V
+
+    :cond_5
+    iget-object v1, p0, Lcarbon/widget/ImageView;->ׯ:Lࡧ/Ԩ$ׯ;
+
+    if-ne v1, v0, :cond_6
+
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    return-void
+
+    :cond_6
+    new-instance v0, Lcarbon/widget/ImageView$Ԩ;
+
+    invoke-direct {v0, p0, p1}, Lcarbon/widget/ImageView$Ԩ;-><init>(Lcarbon/widget/ImageView;I)V
+
+    invoke-static {p0, v1, v0}, Lࡧ/Ԩ;->Ԩ(Landroid/view/View;Lࡧ/Ԩ$ׯ;Lʾ/Ԩ;)Lʾ/ށ;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcarbon/widget/ImageView;->ؠ:Lʾ/Ϳ;
+
+    :cond_7
+    :goto_0
+    return-void
+.end method
+
+.method public setVisibilityImmediate(I)V
+    .locals 0
+
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    return-void
+.end method
+
+.method public setX(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->ޅ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setX(F)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public setY(F)V
+    .locals 1
+
+    sget-boolean v0, Lʹ/Ϳ;->ބ:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lʹ/Ϳ;->ވ(Landroid/view/View;)Lʹ/Ϳ;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lʹ/Ϳ;->ކ(F)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->setY(F)V
+
+    :goto_0
+    iget p1, p0, Lcarbon/widget/ImageView;->ԭ:F
+
+    iget v0, p0, Lcarbon/widget/ImageView;->Ԯ:F
+
+    add-float/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    cmpl-float p1, p1, v0
+
+    if-lez p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    instance-of p1, p1, Landroid/view/View;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
+    .locals 1
+
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->Ԫ:Lࡩ/֏;
+
+    if-ne v0, p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    :goto_1
+    return p1
+.end method
+
+.method public final Ԩ(IIII)V
+    .locals 1
+
+    new-instance v0, Landroid/graphics/Rect;
+
+    invoke-direct {v0, p1, p2, p3, p4}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    iput-object v0, p0, Lcarbon/widget/ImageView;->ՠ:Landroid/graphics/Rect;
+
+    return-void
+.end method
+
+.method public final ԩ(Landroid/util/AttributeSet;I)V
+    .locals 7
+
+    if-eqz p1, :cond_5
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    sget-object v1, Landroidx/lifecycle/ދ;->ޱ:[I
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, p1, v1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    invoke-virtual {v0}, Landroid/content/res/TypedArray;->getIndexCount()I
+
+    move-result v3
+
+    if-ge v1, v3, :cond_4
+
+    invoke-virtual {v0, v1}, Landroid/content/res/TypedArray;->getIndex(I)I
+
+    move-result v3
+
+    const-string v4, "raw"
+
+    const/4 v5, 0x1
+
+    if-ne v3, v5, :cond_0
+
+    invoke-virtual {v0, v3, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->isInEditMode()Z
+
+    move-result v5
+
+    if-nez v5, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v3}, Landroid/content/res/Resources;->getResourceTypeName(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    new-instance v4, Lࡨ/ؠ;
+
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    invoke-direct {v4, v5, v3}, Lࡨ/ؠ;-><init>(Landroid/content/res/Resources;I)V
+
+    :goto_1
+    invoke-virtual {p0, v4}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    goto :goto_2
+
+    :cond_0
+    const/4 v6, 0x4
+
+    if-ne v3, v6, :cond_1
+
+    invoke-virtual {v0, v6, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->isInEditMode()Z
+
+    move-result v5
+
+    if-nez v5, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v3}, Landroid/content/res/Resources;->getResourceTypeName(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    new-instance v4, Lࡨ/ؠ;
+
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    invoke-direct {v4, v5, v3}, Lࡨ/ؠ;-><init>(Landroid/content/res/Resources;I)V
+
+    goto :goto_1
+
+    :cond_1
+    if-nez v3, :cond_2
+
+    invoke-virtual {v0, v3, v5}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v3
+
+    invoke-virtual {p0, v3}, Lcarbon/widget/ImageView;->setEnabled(Z)V
+
+    goto :goto_2
+
+    :cond_2
+    const/4 v4, 0x2
+
+    if-ne v3, v4, :cond_3
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v0, v3, v4}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    invoke-virtual {p0, v3}, Lcarbon/widget/ImageView;->setCornerRadius(I)V
+
+    :cond_3
+    :goto_2
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
+
+    invoke-static {p0, p1, p2}, Lࡦ/Ϳ;->Ԫ(Lࡰ/Ԯ;Landroid/util/AttributeSet;I)V
+
+    invoke-static {p0, p1, p2}, Lࡦ/Ϳ;->ԭ(Lࡩ/ނ;Landroid/util/AttributeSet;I)V
+
+    invoke-static {p0, p1, p2}, Lࡦ/Ϳ;->ԩ(Lࡧ/ނ;Landroid/util/AttributeSet;I)V
+
+    invoke-static {p0, p1, p2}, Lࡦ/Ϳ;->ԯ(Lࡱ/ޅ;Landroid/util/AttributeSet;I)V
+
+    invoke-static {p0, p1, p2}, Lࡦ/Ϳ;->Ԯ(Lࡱ/ރ;Landroid/util/AttributeSet;I)V
+
+    :cond_5
+    return-void
+.end method
+
+.method public final Ԫ()V
+    .locals 4
+
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ނ:Landroid/content/res/ColorStateList;
+
+    if-eqz v0, :cond_1
+
+    iget-object v1, p0, Lcarbon/widget/ImageView;->ރ:Landroid/graphics/PorterDuff$Mode;
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcarbon/widget/ImageView;->ނ:Landroid/content/res/ColorStateList;
+
+    invoke-virtual {v2}, Landroid/content/res/ColorStateList;->getDefaultColor()I
+
+    move-result v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/ColorStateList;->getColorForState([II)I
+
+    move-result v0
+
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    new-instance v2, Landroid/graphics/PorterDuffColorFilter;
+
+    iget-object v3, p0, Lcarbon/widget/ImageView;->ރ:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-direct {v2, v0, v3}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
+
+    invoke-virtual {v1, v2}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public final ԫ()V
+    .locals 3
+
+    iget-object v0, p0, Lcarbon/widget/ImageView;->ހ:Landroid/content/res/ColorStateList;
+
+    if-eqz v0, :cond_0
+
+    iget-object v1, p0, Lcarbon/widget/ImageView;->ށ:Landroid/graphics/PorterDuff$Mode;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcarbon/widget/ImageView;->ހ:Landroid/content/res/ColorStateList;
+
+    invoke-virtual {v2}, Landroid/content/res/ColorStateList;->getDefaultColor()I
+
+    move-result v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/ColorStateList;->getColorForState([II)I
+
+    move-result v0
+
+    new-instance v1, Landroid/graphics/PorterDuffColorFilter;
+
+    iget-object v2, p0, Lcarbon/widget/ImageView;->ށ:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-direct {v1, v0, v2}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
+
+    invoke-virtual {p0, v1}, Landroid/widget/ImageView;->setColorFilter(Landroid/graphics/ColorFilter;)V
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setColorFilter(Landroid/graphics/ColorFilter;)V
+
+    :goto_0
+    return-void
+.end method

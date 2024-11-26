@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp4" android:paddingBottom="@dimen/dp4" android:layout_width="240.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dp4" android:paddingBottom="@dimen/dp4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp10" android:layout_marginRight="@dimen/dp10">
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_settings_mock_cell_switch_title" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Switch android:textSize="@dimen/dp14" android:textStyle="bold" android:id="@id/d_settings_mock_cell_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/d_settings_mock_cell_ll_cells" android:paddingLeft="@dimen/dp10" android:paddingTop="@dimen/dp4" android:paddingRight="@dimen/dp8" android:paddingBottom="@dimen/dp4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:paddingTop="@dimen/dp4" android:paddingBottom="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_settings_mock_cell_ll_cells_title" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:textColorHint="@color/font_color_hint" android:gravity="right" android:id="@id/d_settings_mock_cell_tv_hint" android:paddingRight="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:hint="正在查询.." />
+        <ImageView android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:src="@drawable/ic_action_arrow" android:tint="@color/colorPrimary" />
+    </LinearLayout>
+</LinearLayout>

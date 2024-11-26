@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_primary_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lerist.lib.factory.widget.LViewSwitcher android:id="@id/a_login_lvs_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="84.0dip">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="28.0dip" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_title" />
+                <TextView android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_email_hint" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="28.0dip" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_title_input_vercode" />
+                <TextView android:textColor="@color/font_color_focused" android:id="@id/a_login_tv_hint_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_email_hint_vercode" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="28.0dip" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_tv_hint_email_pwd_title" />
+                <TextView android:textColor="@color/font_color_focused" android:id="@id/a_login_tv_hint_email_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_tv_hint_email_pwd_hint" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="28.0dip" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_tv_hint_email_setpwd_title" />
+                <TextView android:textColor="@color/font_color_focused" android:id="@id/a_login_tv_hint_email_setpwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_tv_hint_email_setpwd_hint" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.lerist.lib.factory.widget.LViewSwitcher>
+        <com.lerist.lib.factory.widget.LViewPager android:id="@id/a_login_lvp_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="600.0dip">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/a_login_til_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:hint="@string/a_login_et_email">
+                    <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/font_color_focused" android:id="@id/a_login_et_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textEmailAddress" android:imeOptions="actionNext" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <View android:layout_width="wrap_content" android:layout_height="68.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="center|left" android:id="@id/a_login_btn_switch" android:paddingTop="@dimen/dp4" android:paddingBottom="@dimen/dp4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_email_btn_switch" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:layout_gravity="right" android:id="@id/a_login_btn_next_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_btn_next_1" android:backgroundTint="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/a_login_til_vercode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:hint="@string/a_login_et_vercode">
+                    <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/font_color_focused" android:id="@id/a_login_et_vercode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="6" android:digits="\ 1234567890" android:inputType="number" android:imeOptions="actionNext" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="68.0dip">
+                    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="center|left" android:id="@id/a_login_btn_requestcode" android:paddingTop="@dimen/dp4" android:paddingBottom="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_btn_requestcode" />
+                    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:layout_gravity="right" android:id="@id/a_login_btn_next_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_btn_next_2" android:backgroundTint="@color/colorAccent" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/a_login_til_email_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:hint="@string/a_login_til_email_pwd_hint">
+                    <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/font_color_focused" android:id="@id/a_login_et_email_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionNext" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <View android:layout_width="wrap_content" android:layout_height="68.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="center|left" android:id="@id/a_login_btn_forgetpwd" android:paddingTop="@dimen/dp4" android:paddingBottom="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_btn_forgetpwd" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:layout_gravity="right" android:id="@id/a_login_btn_next_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_btn_next_1" android:backgroundTint="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/a_login_til_email_setpwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:hint="@string/a_login_til_email_setpwd_hint">
+                    <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/font_color_focused" android:id="@id/a_login_et_email_setpwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionNext" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <View android:layout_width="wrap_content" android:layout_height="68.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:layout_gravity="right" android:id="@id/a_login_btn_next_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_login_btn_next_1" android:backgroundTint="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="48.0dip" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/a_login_finish_title" />
+                <TextView android:textSize="@dimen/dp16" android:textColor="@color/font_color_focused" android:id="@id/a_login_et_finish_username" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:id="@id/a_login_btn_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:text="@string/a_login_btn_finish" android:backgroundTint="@color/colorAccent" />
+            </LinearLayout>
+        </com.lerist.lib.factory.widget.LViewPager>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp8">
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+        <include layout="@layout/layout_termsofuse_and_privacypolicy" />
+    </LinearLayout>
+</FrameLayout>

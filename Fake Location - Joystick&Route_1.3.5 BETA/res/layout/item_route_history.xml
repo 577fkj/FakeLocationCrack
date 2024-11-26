@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp16" android:paddingTop="@dimen/dp12" android:paddingRight="@dimen/dp12" android:paddingBottom="@dimen/dp12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp4" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp8">
+            <ImageView android:padding="@dimen/dp2" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:layout_marginLeft="@dimen/dp4" android:layout_marginRight="@dimen/dp4" android:tint="@color/colorPrimary" app:srcCompat="@drawable/ic_drawer_menu_route" />
+            <TextView android:textSize="@dimen/dp16" android:textStyle="bold" android:textColor="@color/colorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/i_route_history_tv_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:text="NONE" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/dp2" android:paddingBottom="@dimen/dp8" android:layout_width="@dimen/dp32" android:layout_height="fill_parent">
+                <ImageView android:padding="@dimen/dp2" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_route_yourlocation" android:tint="@color/colorPrimary" />
+                <ImageView android:paddingRight="@dimen/dp1" android:layout_width="@dimen/dp24" android:layout_height="0.0dip" android:src="@mipmap/ic_route_trail" android:tint="@color/colorPrimary" android:layout_weight="1.0" android:alpha="0.6" />
+                <ImageView android:padding="@dimen/dp2" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_drawer_menu_fakeloc" android:tint="@color/colorPrimary" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/dp16" android:textStyle="bold" android:textColor="@color/font_color_focused" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/i_route_history_tv_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="NONE" android:maxLines="2" />
+                <TextView android:textSize="@dimen/dp16" android:textStyle="bold" android:textColor="@color/font_color_focused" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/i_route_history_tv_end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="NONE" android:lines="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/i_route_history_iv_pin" android:visibility="gone" android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@drawable/ic_history_pin" android:alpha="0.2" />
+</LinearLayout>

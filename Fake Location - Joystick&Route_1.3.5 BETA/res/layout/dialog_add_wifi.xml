@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp24" android:paddingTop="@dimen/dp16" android:paddingRight="@dimen/dp24" android:paddingBottom="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/d_add_wifi_et_ssid_hint">
+        <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/dp16" android:textStyle="bold" android:textColor="@color/font_color_focused" android:id="@id/d_add_wifi_et_ssid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorAccent" android:id="@id/d_add_wifi_til_bssid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:hint="@string/d_add_wifi_et_bssid_hint">
+        <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/dp16" android:textStyle="bold" android:textColor="@color/font_color_focused" android:id="@id/d_add_wifi_et_bssid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:paddingLeft="@dimen/dp24" android:paddingTop="@dimen/dp12" android:paddingRight="@dimen/dp12" android:paddingBottom="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorAccent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/d_data_import_et_savepath" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatEditText android:textSize="@dimen/dp14" android:textColor="@color/font_color_focused" android:id="@id/d_data_export_et_savepath" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="  " />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button android:textSize="@dimen/dp12" android:layout_gravity="right" android:id="@id/d_data_export_btn_select_path" android:layout_width="wrap_content" android:layout_height="@dimen/dp40" android:layout_marginBottom="@dimen/dp2" android:text="@string/d_data_import_btn_select_path" />
+    </LinearLayout>
+</LinearLayout>

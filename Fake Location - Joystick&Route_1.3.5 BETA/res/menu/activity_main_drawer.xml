@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item android:icon="@mipmap/ic_drawer_menu_fakeloc" android:id="@id/nav_fakeloc" android:title="@string/drawer_menu_fakeloc" />
+        <item android:icon="@drawable/ic_drawer_menu_route" android:id="@id/nav_route" android:title="@string/drawer_menu_route" />
+        <item android:icon="@drawable/ic_drawer_menu_wifi" android:id="@id/nav_wifi" android:title="@string/drawer_menu_wifi" />
+        <item android:icon="@drawable/ic_drawer_menu_alone" android:id="@id/nav_alone" android:title="@string/drawer_menu_alone" />
+    </group>
+    <item android:id="@id/nav_m_settings" android:title="Settings">
+        <menu>
+            <item android:icon="@drawable/ic_drawer_settings_runmode" android:id="@id/nav_mode" android:title="@string/drawer_menu_run_mode" />
+            <item android:icon="@drawable/ic_drawer_settings_setting" android:id="@id/nav_settings" android:title="@string/drawer_menu_settings" />
+        </menu>
+    </item>
+    <item android:id="@id/nav_m_more" android:title="More">
+        <menu>
+            <item android:icon="@drawable/ic_more_rate" android:id="@id/nav_rate" android:title="@string/drawer_menu_rate" />
+            <item android:icon="@drawable/ic_more_share" android:id="@id/nav_share" android:title="@string/drawer_menu_share" />
+            <item android:icon="@drawable/ic_drawer_menu_feedback" android:id="@id/nav_feedback" android:title="@string/drawer_menu_feedback" />
+            <item android:icon="@drawable/ic_report" android:id="@id/nav_report" android:title="@string/drawer_menu_report" />
+            <item android:icon="@drawable/ic_more_faq" android:id="@id/nav_faq" android:title="@string/drawer_menu_faq" />
+            <item android:icon="@mipmap/ic_drawer_menu_privacy_policy" android:id="@id/nav_privacy_policy" android:title="@string/drawer_menu_privacy_policy" />
+            <item android:icon="@mipmap/ic_drawer_menu_teamofuse" android:id="@id/nav_termsofuse" android:title="@string/drawer_menu_termsofuse" />
+            <item android:icon="@drawable/ic_safety" android:id="@id/nav_precaution" android:title="@string/drawer_menu_precaution" />
+            <item android:icon="@drawable/ic_more_about" android:id="@id/nav_discuss" android:title="@string/drawer_menu_discuss" />
+            <item android:icon="@drawable/ic_more_about" android:id="@id/nav_about" android:visible="false" android:title="@string/drawer_menu_about" />
+            <item android:icon="@drawable/ic_more_moreapps" android:id="@id/nav_moreapps" android:title="@string/drawer_menu_moreapps" />
+            <item android:icon="@drawable/ic_drawer_menu_hot" android:id="@id/nav_recommend" android:title="@string/drawer_menu_recommend" />
+            <item android:icon="@mipmap/ic_drawer_menu_logout" android:id="@id/nav_logout" android:title="@string/drawer_menu_logout" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <carbon.widget.ProgressBar android:layout_gravity="center" android:id="@id/v_state_pb_ing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" app:carbon_barWidth="2.0dip" app:carbon_progressStyle="circular_indeterminate" app:carbon_tint="@color/colorAccent" />
+    <carbon.widget.ImageView android:layout_gravity="center" android:id="@id/v_state_iv_okorfail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_view_state_finish" app:carbon_tint="@color/colorAccent" />
+</FrameLayout>

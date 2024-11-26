@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dp24" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="若您发现本软件被人滥用, 请在此提交滥用情况, 我们会尽快处理" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:text="* 滥用情况描述:" />
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" app:cardBackgroundColor="@color/font_color_hint_light" app:cardCornerRadius="@dimen/dp8" app:cardElevation="0.0dip">
+        <EditText android:textSize="@dimen/dp14" android:gravity="top" android:id="@id/d_report_et_content" android:background="@null" android:padding="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="..." android:minLines="5" />
+    </androidx.cardview.widget.CardView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:text="* 联系邮箱:" />
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" app:cardBackgroundColor="@color/font_color_hint_light" app:cardCornerRadius="@dimen/dp8" app:cardElevation="0.0dip">
+        <EditText android:textSize="@dimen/dp14" android:gravity="top" android:id="@id/d_report_et_email" android:background="@null" android:padding="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textEmailAddress" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

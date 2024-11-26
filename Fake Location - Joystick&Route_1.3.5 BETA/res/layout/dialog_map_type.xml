@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/d_map_type_layer_rg" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="@dimen/dp64">
+        <RadioButton android:textSize="0.0sp" android:id="@id/d_map_type_layer_rb_default" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" android:button="@drawable/ds_map_layer_default" />
+        <RadioButton android:textSize="0.0sp" android:gravity="center" android:id="@id/d_map_type_layer_rb_satellite" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp16" android:button="@drawable/ds_map_layer_satellite" />
+    </RadioGroup>
+</LinearLayout>

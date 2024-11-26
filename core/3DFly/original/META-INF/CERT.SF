@@ -1,0 +1,17 @@
+Signature-Version: 1.0
+Created-By: Android Gradle 7.4.2
+SHA-256-Digest-Manifest: zSJ/Y389bh/5IGN52fEdPSCit/OjIDQNMYSISTmIwUI=
+X-Android-APK-Signed: 2
+
+Name: AndroidManifest.xml
+SHA-256-Digest: M/VWVvq19mWfyXlvtPn8BC5Ep33NO/cgioE7LFZzXnQ=
+
+Name: META-INF/com/android/build/gradle/app-metadata.properties
+SHA-256-Digest: 0FOL+fr/8aZBEav/2wjEK6vVyEHG7SyqXRekTvG5poU=
+
+Name: classes.dex
+SHA-256-Digest: 4uXT4oA/gAG7BInlsBMFhFcOWH5LgX16BTrcBSN+pGA=
+
+Name: resources.arsc
+SHA-256-Digest: dy0aWINIjSg3U7uN1dMoxVo9TCQCcSY+HgQs14FNOAg=
+

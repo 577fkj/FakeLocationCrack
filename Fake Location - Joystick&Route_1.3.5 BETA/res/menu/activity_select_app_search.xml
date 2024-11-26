@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@mipmap/ic_filter_list" android:id="@id/m_item_filter" android:title="Filter" app:showAsAction="always">
+        <menu>
+            <item android:id="@id/m_item_filter_list_all" android:title="@string/m_item_filter_list_all" android:checkable="true" app:showAsAction="never" />
+            <item android:id="@id/m_item_filter_list_system" android:title="@string/m_item_filter_list_system" android:checkable="true" app:showAsAction="never" />
+            <item android:id="@id/m_item_filter_list_user" android:title="@string/m_item_filter_list_user" android:checkable="true" app:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:icon="@mipmap/ic_menu_search_mtrl_alpha" android:id="@id/m_item_search" android:title="Search" app:showAsAction="always" />
+</menu>

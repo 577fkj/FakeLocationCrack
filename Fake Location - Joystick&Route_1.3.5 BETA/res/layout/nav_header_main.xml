@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/side_nav_bar" android:scaleType="centerCrop" />
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/nav_header_height">
+            <ImageView android:id="@id/imageView" android:paddingTop="@dimen/nav_header_vertical_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:contentDescription="@string/nav_header_desc" app:srcCompat="@mipmap/ic_launcher" />
+            <TextView android:textSize="@dimen/dp20" android:textStyle="bold" android:textColor="@color/white" android:id="@id/n_header_main_tv_username" android:paddingTop="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:text="@string/nav_header_title" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:layout_marginTop="@dimen/dp8">
+                <TextView android:textSize="@dimen/dp12" android:textStyle="bold" android:textColor="@color/white" android:id="@id/n_header_main_tv_proindate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp16" android:text="PRO:  ---/--" />
+                <carbon.widget.TextView android:textSize="@dimen/dp11" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/n_header_main_btn_getpro" android:background="@color/white" android:paddingLeft="@dimen/dp6" android:paddingTop="@dimen/dp2" android:paddingRight="@dimen/dp6" android:paddingBottom="@dimen/dp2" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="解锁专业版" app:carbon_cornerRadius="@dimen/dp2" app:carbon_rippleColor="@color/ripple" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp12" android:textStyle="bold" android:paddingTop="@dimen/dp4" android:paddingBottom="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" />
+                <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_ad" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-16.0dip" android:layout_marginBottom="-16.0dip" android:src="@mipmap/alipay_example" android:scaleType="fitCenter" android:minHeight="100.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp16" android:paddingTop="@dimen/dp16" android:paddingBottom="@dimen/dp4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" android:src="@mipmap/ic_pay_ali" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/vip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:text="支付宝支付" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp16" android:paddingTop="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/vip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付金额" />
+                <TextView android:textSize="32.0sp" android:textStyle="bold" android:textColor="@color/vip_text_1" android:textColorHint="@color/vip_text_1" android:id="@id/d_alipay_tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="¥0.00" android:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginTop="@dimen/dp4">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/vip_text" android:textColorHint="@color/vip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订  单  码" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp6">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/vip_text_1" android:textColorHint="@color/vip_text" android:id="@id/d_alipay_tv_ordercode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="订单码生成中...     " android:textIsSelectable="true" />
+                    <carbon.widget.TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/d_alipay_btn_copy_ordercode" android:background="@color/vip_text" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="复制订单码" app:carbon_cornerRadius="2.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <carbon.widget.LinearLayout android:orientation="vertical" android:background="@color/color_primary_content" android:padding="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" app:carbon_cornerRadius="@dimen/dp2">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/vip_text" android:id="@id/d_alipay_tv_payinstruct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_alipay_tv_payinstract" />
+            </carbon.widget.LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

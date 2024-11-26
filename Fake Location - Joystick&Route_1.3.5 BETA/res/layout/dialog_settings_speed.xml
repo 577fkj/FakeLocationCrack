@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp10" android:paddingTop="@dimen/dp8" android:paddingRight="@dimen/dp10" android:paddingBottom="@dimen/dp8" android:layout_width="240.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <carbon.widget.LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/dp4" android:layout_width="fill_parent" android:layout_height="wrap_content" app:carbon_rippleColor="@color/colorPrimary">
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_settings_speed_tv_title" />
+        <EditText android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="right" android:id="@id/d_settings_speed_et_value" android:background="@null" android:paddingRight="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:hint="      " android:singleLine="true" android:maxLength="5" android:digits="1234567890." android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionDone" />
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="m/s" />
+    </carbon.widget.LinearLayout>
+    <SeekBar android:id="@id/d_settings_speed_sb_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8_reverse" android:layout_marginRight="@dimen/dp8_reverse" android:max="40" android:progressTint="@color/colorPrimary" android:progressBackgroundTint="@color/colorPrimary" android:secondaryProgressTint="@color/colorPrimary" android:backgroundTint="@color/colorPrimary" android:thumbTint="@color/colorPrimary" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp4">
+        <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@mipmap/ic_rocker_speed_level_0" android:tint="@color/colorPrimary" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@mipmap/ic_rocker_speed_level_1" android:tint="@color/colorPrimary" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@mipmap/ic_rocker_speed_level_2" android:tint="@color/colorPrimary" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@mipmap/ic_rocker_speed_level_3" android:tint="@color/colorPrimary" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@mipmap/ic_rocker_speed_level_4" android:tint="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8">
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_settings_speed_tiptronic_title" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Switch android:textSize="@dimen/dp14" android:textStyle="bold" android:id="@id/d_settings_speed_tiptronic_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8">
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:id="@id/d_settings_speed_btn_setsteps" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/d_settings_speed_mockstep_switch_title" android:layout_weight="1.0" />
+        <Switch android:textSize="@dimen/dp14" android:textStyle="bold" android:id="@id/d_settings_speed_mockstep_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:layout_marginBottom="@dimen/dp4">
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_settings_stride_frequency_et_value_title" />
+        <EditText android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="right" android:id="@id/d_settings_stride_frequency_et_value" android:background="@null" android:paddingRight="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:hint="      " android:singleLine="true" android:maxLength="6" android:digits="1234567890." android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionDone" />
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_settings_stride_frequency_et_value_unit" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16">
+        <ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:layout_marginLeft="@dimen/dp16" android:src="@mipmap/ic_drawer_menu_fakeloc" android:tint="@color/colorAccent" />
+        <TextView android:textSize="@dimen/dp16" android:textColor="@color/font_color_focused2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:text="@string/d_location_capture_tv_gps" android:layout_weight="1.0" />
+        <com.lerist.fakelocation.widget.StateView android:id="@id/d_location_capture_sv_gps_state" android:layout_width="@dimen/dp22" android:layout_height="@dimen/dp22" android:layout_marginRight="@dimen/dp16" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:layout_marginLeft="@dimen/dp16" android:src="@mipmap/ic_fakeloc_cell" android:tint="@color/colorAccent" />
+        <TextView android:textSize="@dimen/dp16" android:textColor="@color/font_color_focused2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:text="@string/d_location_capture_tv_cell" android:layout_weight="1.0" />
+        <com.lerist.fakelocation.widget.StateView android:id="@id/d_location_capture_sv_cell_state" android:layout_width="@dimen/dp22" android:layout_height="@dimen/dp22" android:layout_marginRight="@dimen/dp16" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:padding="@dimen/dp2" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:layout_marginLeft="@dimen/dp16" android:src="@drawable/ic_drawer_menu_wifi" android:tint="@color/colorAccent" />
+        <TextView android:textSize="@dimen/dp16" android:textColor="@color/font_color_focused2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:text="@string/d_location_capture_tv_wifi" android:layout_weight="1.0" />
+        <com.lerist.fakelocation.widget.StateView android:id="@id/d_location_capture_sv_wifi_state" android:layout_width="@dimen/dp22" android:layout_height="@dimen/dp22" android:layout_marginRight="@dimen/dp16" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp16" android:textColor="@color/colorAccent" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:text="@string/d_location_capture_et_name" />
+        <EditText android:textSize="@dimen/dp16" android:id="@id/d_location_capture_et_name" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp2" android:layout_marginRight="@dimen/dp16" android:singleLine="true" android:maxLength="50" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dp12" android:textColor="@color/font_color_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginTop="@dimen/dp8" android:layout_marginRight="@dimen/dp24" android:layout_marginBottom="@dimen/dp8" android:text="@string/d_location_capture_use_hint" />
+</LinearLayout>

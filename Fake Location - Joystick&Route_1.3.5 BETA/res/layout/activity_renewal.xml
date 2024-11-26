@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginTop="@dimen/dp12" android:layout_marginRight="@dimen/dp8" android:foreground="?selectableItemBackground" app:cardElevation="@dimen/dp4">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dp14" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_acount_title" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/dp20" android:textColor="@color/font_color_focused" android:id="@id/a_renewal_tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:hint="NAME" />
+                            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:id="@id/a_renewal_tv_proindate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="" android:hint="NONE" />
+                        </LinearLayout>
+                        <Button android:textSize="@dimen/dp12" android:textColor="@color/white" android:id="@id/a_renewal_btn_trypro" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dp40" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_btn_trypro_text" android:hint="@string/a_renewal_btn_trypro_text" android:backgroundTint="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/dp11" android:textStyle="bold|italic" android:textColor="@color/white" android:gravity="bottom|center" android:layout_gravity="center|right|top" android:id="@id/a_renewal_tv_pro_tag" android:background="@color/colorAccent" android:paddingTop="@dimen/dp1" android:paddingBottom="@dimen/dp1" android:visibility="gone" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" android:layout_marginTop="-24.0dip" android:layout_marginRight="-24.0dip" android:text="Pro" android:rotation="45.0" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:background="@color/white" android:clickable="true" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginTop="@dimen/dp12" android:layout_marginRight="@dimen/dp8" android:foreground="?selectableItemBackground" app:cardElevation="@dimen/dp4" app:contentPaddingBottom="@dimen/dp16" app:contentPaddingTop="@dimen/dp16">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dp14" android:textColor="@color/colorPrimary" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_lrv_goods_title" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.lerist.lib.factory.widget.LRecyclerView android:id="@id/a_renewal_lrv_goods" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:minHeight="@dimen/dp64" android:overScrollMode="never" />
+                        <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:gravity="center" android:id="@id/a_renewal_btn_reload_goods" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/a_renewal_btn_reload_goods_loading" />
+                    </FrameLayout>
+                    <com.lerist.lib.ads.widget.AdTextView android:textSize="@dimen/dp12" android:textStyle="bold" android:id="@id/a_renewal_adtv" android:paddingLeft="@dimen/dp16" android:paddingTop="@dimen/dp4" android:paddingRight="@dimen/dp8" android:paddingBottom="@dimen/dp4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/dp4" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8">
+                        <carbon.widget.LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a_renewal_btn_pay_ali" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginRight="@dimen/dp8" android:foreground="?selectableItemBackground" app:carbon_cornerRadius="@dimen/dp2">
+                            <ImageView android:padding="@dimen/dp8" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" android:src="@mipmap/ic_pay_ali" />
+                            <TextView android:textSize="@dimen/dp16" android:textStyle="bold" android:textColor="@color/vip_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp8" android:text="@string/a_renewal_btn_pay_ali_title" />
+                            <ImageView android:id="@id/a_renewal_btn_pay_ali_hint" android:padding="@dimen/dp2" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:layout_marginLeft="@dimen/dp4" android:alpha="0.5" app:srcCompat="@drawable/ic_action_hint" />
+                        </carbon.widget.LinearLayout>
+                        <View android:id="@id/a_renewal_line_pay_google" android:background="@color/vip_text_1" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/dp10" />
+                        <carbon.widget.LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a_renewal_btn_pay_google" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" app:carbon_cornerRadius="@dimen/dp2">
+                            <ImageView android:padding="@dimen/dp8" android:layout_width="@dimen/dp48" android:layout_height="@dimen/dp48" android:src="@mipmap/ic_pay_google" />
+                            <TextView android:textSize="@dimen/dp16" android:textStyle="bold" android:textColor="@color/vip_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp8" android:text="Google Play" android:hint="　　　" />
+                        </carbon.widget.LinearLayout>
+                        <View android:id="@id/a_renewal_line_pay_paypal" android:background="@color/vip_text_1" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/dp10" />
+                        <carbon.widget.LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a_renewal_btn_pay_paypal" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp10" android:foreground="?selectableItemBackground" app:carbon_cornerRadius="@dimen/dp2">
+                            <ImageView android:padding="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="@dimen/dp48" android:src="@drawable/ic_paypal" />
+                            <TextView android:textSize="@dimen/dp16" android:textStyle="bold" android:textColor="@color/vip_text_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp8" android:text="Paypal" android:hint="　　　" />
+                        </carbon.widget.LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginTop="@dimen/dp12" android:layout_marginRight="@dimen/dp8" android:foreground="?selectableItemBackground" app:cardElevation="@dimen/dp4" app:contentPadding="@dimen/dp16">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dp14" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_title" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24" android:layout_marginBottom="@dimen/dp24">
+                        <include layout="@layout/layout_pro_ability" />
+                    </LinearLayout>
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp16" android:text="@string/a_renewal_pro_ability_note" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginTop="@dimen/dp12" android:layout_marginRight="@dimen/dp8" android:layout_marginBottom="@dimen/dp24" android:foreground="?selectableItemBackground" app:cardElevation="@dimen/dp4" app:contentPaddingBottom="@dimen/dp16" app:contentPaddingTop="@dimen/dp16">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dp14" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:text="@string/a_renewal_support_title" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a_renewal_faq_pay" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:foreground="?selectableItemBackground">
+                        <TextView android:textSize="@dimen/dp16" android:textColor="@color/font_color_focused" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_faq_pay" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@drawable/ic_action_arrow" android:alpha="0.6" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a_renewal_faq" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+                        <TextView android:textSize="@dimen/dp16" android:textColor="@color/font_color_focused" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_faq" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@drawable/ic_action_arrow" android:alpha="0.6" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email: lerist.dev@gmail.com" android:layout_weight="1.0" />
+                        <Button android:textSize="@dimen/dp12" android:textColor="@color/white" android:id="@id/a_renewal_btn_contact_developer" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dp40" android:layout_marginTop="@dimen/dp4" android:text="@string/action_contact_developer" android:backgroundTint="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

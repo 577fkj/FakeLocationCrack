@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <carbon.widget.TextView android:textSize="@dimen/dp12" android:textStyle="bold|italic" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/l_rocker_tv_speed" android:background="#b0000000" android:paddingLeft="@dimen/dp8" android:paddingRight="@dimen/dp8" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/dp16" android:layout_marginBottom="@dimen/dp4" android:text="0m/s" android:singleLine="true" app:carbon_cornerRadius="@dimen/dp8" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <carbon.widget.FrameLayout android:id="@id/l_rocker_iv_csys" android:background="@mipmap/bg_rocker_csys" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" app:carbon_cornerRadius="@dimen/dp60" />
+        <carbon.widget.FrameLayout android:id="@id/l_rocker_iv_orientation" android:background="@mipmap/bg_rocker_orientation" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" app:carbon_cornerRadius="@dimen/dp60" />
+        <com.lerist.fakelocation.widget.RockerView android:id="@id/l_rocker_rv" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" app:areaBackground="#00000000" app:rockerBackground="#fff7f7f7" app:rockerRadius="@dimen/dp12" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp80" android:layout_height="@dimen/dp24" android:layout_marginLeft="@dimen/dp4" android:layout_marginTop="@dimen/dp6" android:layout_marginRight="@dimen/dp4" android:layout_marginBottom="@dimen/dp8" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/dp12" app:cardElevation="@dimen/dp2">
+            <ImageView android:paddingLeft="@dimen/dp8" android:paddingTop="@dimen/dp2" android:paddingRight="@dimen/dp8" android:paddingBottom="@dimen/dp2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_rocker_anchor" android:tint="@color/font_color_normal" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center|right" android:id="@id/l_rocker_btn_settings" android:padding="@dimen/dp2" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_rocker_menu" android:tint="@color/colorPrimary" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</LinearLayout>

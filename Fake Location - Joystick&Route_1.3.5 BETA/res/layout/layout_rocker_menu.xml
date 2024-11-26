@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/l_rocker_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp4" android:layout_marginTop="@dimen/dp2" android:layout_marginRight="@dimen/dp4" android:layout_marginBottom="@dimen/dp8" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/dp4" app:cardElevation="@dimen/dp3">
+        <com.lerist.lib.factory.widget.LViewSwitcher android:id="@id/l_rocker_menu_lvs" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="220.0dip" android:layout_height="240.0dip">
+                <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp14" android:paddingTop="@dimen/dp14" android:paddingRight="@dimen/dp14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <carbon.widget.LinearLayout android:orientation="horizontal" android:id="@id/l_rocker_menu_item_orientation" android:paddingBottom="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_rocker_menu_item_orientation_title" />
+                            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center|right" android:id="@id/l_rocker_menu_item_orientation_tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:text="Relative to Device" />
+                        </carbon.widget.LinearLayout>
+                        <include layout="@layout/layout_line" />
+                        <carbon.widget.LinearLayout android:orientation="horizontal" android:id="@id/l_rocker_menu_item_speed" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp4" android:layout_width="fill_parent" android:layout_height="wrap_content" app:carbon_rippleColor="@color/colorPrimary">
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_rocker_menu_item_speed_title" />
+                            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                            <EditText android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="right" android:id="@id/l_rocker_menu_item_speed_et_value" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:hint="      " android:singleLine="true" android:maxLength="5" android:digits="1234567890." android:inputType="number" android:imeOptions="actionDone" />
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" m/s" />
+                        </carbon.widget.LinearLayout>
+                        <SeekBar android:id="@id/l_rocker_menu_item_speed_sb_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8_reverse" android:layout_marginRight="@dimen/dp8_reverse" android:max="40" android:progressTint="@color/colorPrimary" android:progressBackgroundTint="@color/colorPrimary" android:secondaryProgressTint="@color/colorPrimary" android:backgroundTint="@color/colorPrimary" android:thumbTint="@color/colorPrimary" />
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@mipmap/ic_rocker_speed_level_0" android:tint="@color/colorPrimary" />
+                            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@mipmap/ic_rocker_speed_level_1" android:tint="@color/colorPrimary" />
+                            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@mipmap/ic_rocker_speed_level_2" android:tint="@color/colorPrimary" />
+                            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@mipmap/ic_rocker_speed_level_3" android:tint="@color/colorPrimary" />
+                            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" android:src="@mipmap/ic_rocker_speed_level_4" android:tint="@color/colorPrimary" />
+                        </LinearLayout>
+                        <include layout="@layout/layout_line" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:layout_marginBottom="@dimen/dp4">
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_rocker_menu_item_rockerlock_switch_title" />
+                            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                            <Switch android:textSize="@dimen/dp14" android:textStyle="bold" android:id="@id/l_rocker_menu_item_rockerlock_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <include layout="@layout/layout_line" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:layout_marginBottom="@dimen/dp4">
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:id="@id/l_rocker_menu_item_mockstep_tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/d_settings_speed_mockstep_switch_title" android:layout_weight="1.0" />
+                            <Switch android:textSize="@dimen/dp14" android:textStyle="bold" android:id="@id/l_rocker_menu_item_mockstep_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp8">
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_settings_stride_frequency_et_value_title" />
+                            <EditText android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="right" android:id="@id/l_rocker_menu_item_frequency_et_value" android:background="@null" android:paddingRight="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:hint="      " android:singleLine="true" android:maxLength="6" android:digits="1234567890." android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionDone" />
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_settings_stride_frequency_et_value_unit" />
+                        </LinearLayout>
+                        <include layout="@layout/layout_line" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:layout_marginBottom="@dimen/dp4">
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_rocker_menu_item_mockgpsstatus_switch_title" />
+                            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                            <Switch android:textSize="@dimen/dp14" android:textStyle="bold" android:id="@id/l_rocker_menu_item_mockgpsstatus_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <include layout="@layout/layout_line" />
+                        <carbon.widget.LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l_rocker_menu_item_location" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_rocker_menu_item_location_title" />
+                            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="@dimen/dp20" android:layout_height="@dimen/dp20" android:src="@drawable/ic_action_arrow" android:tint="@color/colorPrimary" />
+                        </carbon.widget.LinearLayout>
+                        <include layout="@layout/layout_line" />
+                        <carbon.widget.LinearLayout android:orientation="horizontal" android:id="@id/l_rocker_menu_item_location_save" android:paddingTop="@dimen/dp8" android:paddingBottom="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_rocker_menu_item_location_save_title" />
+                        </carbon.widget.LinearLayout>
+                        <include layout="@layout/layout_line" />
+                    </LinearLayout>
+                </ScrollView>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp14" android:paddingRight="@dimen/dp14" android:paddingBottom="@dimen/dp14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Switch android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:id="@id/l_rocker_menu_item_service_switch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp8" android:text="@string/l_rocker_menu_item_service_switch_title" android:layout_weight="1.0" />
+                        <include layout="@layout/layout_line_vertical" />
+                        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:gravity="center" android:id="@id/l_rocker_menu_item_rocker_switch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:text="@string/l_rocker_menu_item_rocker_switch" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="220.0dip" android:layout_height="240.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <carbon.widget.ImageView android:id="@id/l_rocker_menu_loc_history_btn_back" android:paddingLeft="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_back" app:carbon_tint="@color/colorPrimaryDark" />
+                    <TextView android:textSize="@dimen/dp16" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:text="@string/l_rocker_menu_loc_history_title" android:layout_weight="1.0" />
+                    <carbon.widget.ImageView android:id="@id/l_rocker_menu_loc_history_btn_add" android:paddingRight="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_add" app:carbon_tint="@color/colorPrimaryDark" />
+                </LinearLayout>
+                <com.lerist.lib.factory.widget.LRecyclerView android:id="@id/l_rocker_menu_lrv_loc_history" android:paddingTop="@dimen/dp4" android:paddingBottom="@dimen/dp8" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </com.lerist.lib.factory.widget.LViewSwitcher>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

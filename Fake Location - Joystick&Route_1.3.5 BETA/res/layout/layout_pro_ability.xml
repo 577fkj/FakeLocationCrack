@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/l_pro_abilty_item_joystick" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_joystick" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_rocker_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_rocker_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/l_pro_abilty_item_cells" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_fakeloc_cell" app:carbon_tint="@color/colorPrimaryDark" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_mock_cells_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_mock_cells_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/l_pro_abilty_item_route" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@drawable/ic_drawer_menu_route" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_mock_route_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_mock_route_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/l_pro_abilty_item_steps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_rocker_speed_level_1" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_mock_steps_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_mock_steps_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/l_pro_abilty_item_wifi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@drawable/ic_drawer_menu_wifi" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_mock_wifi_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_mock_wifi_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/l_pro_abilty_item_gpssignal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_drawer_menu_gps" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_settings_item_mock_gps_status_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_settings_item_mock_gps_status_summary" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/l_pro_abilty_item_mock_sim" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_pro_sim" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_settings_item_mock_sim_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_settings_item_mock_sim_summary" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_pro_altitude" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_mock_altitude_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_mock_altitude_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/l_pro_abilty_item_alone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@drawable/ic_drawer_menu_alone" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_mock_anti_alone_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_mock_anti_alone_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/l_pro_abilty_item_loccap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_location_capture" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_location_capture_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_location_capture_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_pro_address_share" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_address_share_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_address_share_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_advertising" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_advertising_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_advertising_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp24">
+        <carbon.widget.ImageView android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_pro_data_export" app:carbon_tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_renewal_pro_ability_data_export_title" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="@string/a_renewal_pro_ability_data_export_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

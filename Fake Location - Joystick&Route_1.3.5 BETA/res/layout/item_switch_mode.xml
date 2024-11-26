@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckedTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?textColorAlertDialogListItem" android:gravity="center_vertical" android:id="@id/i_switch_ctv_title" android:paddingLeft="@dimen/abc_select_dialog_padding_start_material" android:paddingRight="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeightSmall" android:text="ROOT" android:drawableLeft="?android:listChoiceIndicatorSingle" android:drawablePadding="@dimen/dp16" android:drawableStart="?android:listChoiceIndicatorSingle" android:paddingStart="@dimen/abc_select_dialog_padding_start_material" android:paddingEnd="@dimen/dp8" />
+    <TextView android:textSize="@dimen/dp12" android:textStyle="bold" android:id="@id/i_switch_tv_subtitle" android:paddingRight="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_switch_mode_item_mode_root_hint" />
+</LinearLayout>

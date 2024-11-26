@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp24" android:paddingRight="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp14" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:text="@string/d_address_export_content_title_address" />
+    <TextView android:textSize="@dimen/dp18" android:textStyle="bold" android:textColor="@color/font_color_focused" android:ellipsize="end" android:id="@id/d_address_export_tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:text="NONE" android:singleLine="true" />
+    <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:ellipsize="end" android:id="@id/d_address_export_tv_country" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:text="NONE • NONE" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4">
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/font_color_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f_fakeloc_tv_current_latlong_title" />
+        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/d_address_export_tv_latlong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:text="" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dp14" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp14" android:layout_marginBottom="@dimen/dp6" android:text="@string/d_address_export_content_title_extras" />
+    <CheckBox android:textSize="@dimen/dp14" android:textColor="@color/cs_focused_enable" android:gravity="center_vertical" android:id="@id/d_address_export_cb_cells" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_address_export_content_title_extras_cells" />
+    <CheckBox android:textSize="@dimen/dp14" android:textColor="@color/cs_focused_enable" android:id="@id/d_address_export_cb_wifis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_address_export_content_title_extras_wifis" />
+</LinearLayout>

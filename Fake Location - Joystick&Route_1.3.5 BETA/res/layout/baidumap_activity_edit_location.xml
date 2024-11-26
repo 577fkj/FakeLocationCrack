@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorPrimary" android:padding="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/dp14" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/a_edit_location_et_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/a_edit_location_et_name_title" android:backgroundTint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/dp14" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/a_edit_location_et_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/a_edit_location_et_address_title" android:backgroundTint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/dp14" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/a_edit_location_et_lat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/a_edit_location_et_latitude" android:digits="1234567890.-" android:inputType="number" android:backgroundTint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/dp14" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/a_edit_location_et_long" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/a_edit_location_et_longitude" android:digits="1234567890.-" android:inputType="number" android:backgroundTint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/dp14" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/a_edit_location_et_altitude" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/a_edit_location_et_altitude" android:digits="1234567890.-" android:inputType="number" android:backgroundTint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <com.baidu.mapapi.map.MapView android:id="@id/a_edit_location_mapview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/a_edit_location_btn_done" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp24" android:layout_marginEnd="@dimen/dp16" app:backgroundTint="@color/colorPrimary" app:layout_anchor="@id/a_edit_location_mapview" app:layout_anchorGravity="end|bottom|center" app:srcCompat="@drawable/ic_action_done" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diypackage_signs">
+        <item>@string/a_diy_package_sign_user</item>
+    </string-array>
+    <string-array name="maps_names">
+        <item>@string/maps_name_google</item>
+        <item>@string/maps_name_baidu</item>
+    </string-array>
+    <string-array name="maps_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

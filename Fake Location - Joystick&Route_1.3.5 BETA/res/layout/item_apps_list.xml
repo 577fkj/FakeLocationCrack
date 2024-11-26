@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dd.ShadowLayout android:id="@id/i_app_list_sl_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8_reverse" android:layout_marginBottom="@dimen/dp8_reverse" app:sl_cornerRadius="0.0dip" app:sl_shadowColor="@color/overlay" app:sl_shadowRadius="@dimen/dp8">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/layout_line_1dp" />
+            <carbon.widget.LinearLayout android:orientation="horizontal" android:padding="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp4" app:carbon_cornerRadius="@dimen/dp2" app:carbon_rippleColor="@color/ripple">
+                <ImageView android:id="@id/i_app_list_iv_icon" android:layout_width="@dimen/dp36" android:layout_height="@dimen/dp36" android:layout_marginRight="@dimen/dp4" android:scaleType="centerCrop" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp12" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/dp16" android:textColor="@color/font_color_focused2" android:id="@id/i_app_list_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NAME" android:singleLine="true" android:includeFontPadding="false" />
+                    <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:textColorHint="@color/font_color_normal" android:id="@id/i_app_list_tv_packagename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="PACKAGE NAME" android:singleLine="true" />
+                </LinearLayout>
+            </carbon.widget.LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp8" android:textColor="@color/white" android:layout_gravity="bottom|center|right" android:id="@id/i_app_list_v_suggest" android:background="@color/colorAccent2" android:paddingLeft="@dimen/dp4" android:paddingTop="@dimen/dp2" android:paddingRight="@dimen/dp4" android:paddingBottom="@dimen/dp2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i_app_list_v_suggest" />
+        <View android:layout_gravity="bottom|center|right" android:id="@id/i_app_list_v_checked" android:background="@color/colorPrimary" android:visibility="visible" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:layout_marginRight="-12.0dip" android:layout_marginBottom="-12.0dip" android:rotation="45.0" />
+    </com.dd.ShadowLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp24" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.cardview.widget.CardView android:background="@color/white" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginTop="@dimen/dp8" android:layout_marginRight="@dimen/dp8" android:layout_marginBottom="@dimen/dp12" android:foreground="?selectableItemBackground" app:cardElevation="@dimen/dp4" app:contentPadding="@dimen/dp16">
+                <LinearLayout android:orientation="vertical" android:id="@id/f_route_ll_target_route" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dp14" android:textColor="@color/colorPrimary" android:paddingBottom="@dimen/dp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f_route_ll_target_route_title" />
+                    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp8">
+                        <ImageView android:padding="@dimen/dp2" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:tint="@color/colorPrimary" app:srcCompat="@drawable/ic_drawer_menu_route" />
+                        <TextView android:textSize="@dimen/dp18" android:textStyle="bold" android:textColor="@color/colorPrimary" android:textColorHint="@color/colorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/f_route_tv_target_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16" android:hint="NONE" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/dp2" android:paddingBottom="@dimen/dp1" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <ImageView android:padding="@dimen/dp2" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_route_yourlocation" android:tint="@color/colorPrimary" />
+                            <ImageView android:layout_width="@dimen/dp24" android:layout_height="0.0dip" android:src="@mipmap/ic_route_trail" android:tint="@color/colorPrimary" android:layout_weight="1.0" android:alpha="0.6" />
+                            <ImageView android:padding="@dimen/dp2" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp24" android:src="@mipmap/ic_drawer_menu_fakeloc" android:tint="@color/colorPrimary" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+                            <TextView android:textSize="@dimen/dp18" android:textStyle="bold" android:textColor="@color/font_color_focused" android:textColorHint="@color/font_color_focused" android:ellipsize="end" android:id="@id/f_route_tv_target_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/f_route_tv_target_start_tv_text" android:singleLine="true" />
+                            <TextView android:textSize="@dimen/dp18" android:textStyle="bold" android:textColor="@color/font_color_focused" android:textColorHint="@color/font_color_focused" android:ellipsize="end" android:id="@id/f_route_tv_target_end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12" android:hint="@string/f_route_tv_target_end_tv_text" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16">
+                        <carbon.widget.TextView android:textSize="@dimen/dp14" android:textColor="@color/white" android:gravity="center" android:id="@id/f_route_tv_service_pause" android:background="@drawable/ds_primary_enable" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp28" android:layout_marginRight="@dimen/dp8" android:text="暂停" app:carbon_cornerRadius="@dimen/dp14" app:carbon_rippleColor="@color/font_color_hint" />
+                        <carbon.widget.LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/f_route_btn_service_switch" android:background="@drawable/ds_primary_enable" android:paddingLeft="@dimen/dp16" android:paddingRight="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="@dimen/dp28" app:carbon_cornerRadius="@dimen/dp14" app:carbon_rippleColor="@color/font_color_hint">
+                            <carbon.widget.TextView android:textSize="@dimen/dp14" android:textColor="@color/white" android:gravity="center" android:id="@id/f_route_tv_service_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp8" android:text="启动模拟" />
+                            <ProgressBar android:theme="@style/AppTheme.colorAccent2" android:id="@id/f_route_pb_service_switch" android:visibility="gone" android:layout_width="@dimen/dp16" android:layout_height="@dimen/dp16" />
+                        </carbon.widget.LinearLayout>
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/f_route_tv_set_speed" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/f_route_btn_set_speed_title" />
+                        <carbon.widget.FrameLayout android:layout_width="@dimen/dp28" android:layout_height="@dimen/dp28" android:layout_marginLeft="@dimen/dp2" android:layout_marginRight="@dimen/dp10" app:carbon_cornerRadius="@dimen/dp15">
+                            <androidx.appcompat.widget.AppCompatImageView android:id="@id/f_route_btn_set_speed" android:padding="@dimen/dp5" android:layout_width="@dimen/dp28" android:layout_height="@dimen/dp28" android:foreground="?selectableItemBackground" android:src="@mipmap/ic_rocker_speed_level_0" android:tint="@color/colorPrimary" app:tint="@color/colorPrimary" />
+                        </carbon.widget.FrameLayout>
+                        <TextView android:textSize="@dimen/dp14" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/f_route_tv_set_repeat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f_route_tv_set_repeat_title" />
+                        <androidx.appcompat.widget.SwitchCompat android:id="@id/f_route_sv_set_repeat" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/f_route_ll_suggest" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16">
+                        <include layout="@layout/layout_line" />
+                        <com.lerist.lib.ads.widget.AdHtmlView android:textSize="@dimen/dp12" android:textStyle="bold" android:id="@id/f_route_ll_suggest_adtv" android:paddingTop="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp24" android:layout_marginTop="@dimen/dp12" android:layout_marginRight="@dimen/dp24" android:layout_marginBottom="@dimen/dp12" android:text="@string/f_route_lrv_history_title" />
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/f_route_btn_search" android:padding="@dimen/dp6" android:layout_width="@dimen/dp32" android:layout_height="@dimen/dp32" android:layout_marginRight="@dimen/dp16" android:foreground="?selectableItemBackground" android:src="@mipmap/ic_menu_search_mtrl_alpha" android:tint="@color/font_color_hint" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_gravity="center" android:id="@id/f_main_v_hint_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp48" layout="@layout/view_history_list_hint_empty" />
+                <androidx.cardview.widget.CardView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginRight="@dimen/dp8" android:layout_marginBottom="@dimen/dp24" app:cardElevation="@dimen/dp4">
+                    <com.lerist.lib.factory.widget.LRecyclerView android:id="@id/f_route_lrv_history" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

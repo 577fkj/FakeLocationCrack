@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="ps_root"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/a_settings_category_mock" android:key="pc_mockloc">
+        <ListPreference android:entries="@array/maps_names" android:title="@string/a_settings_category_general_default_map" android:key="general_default_map" android:defaultValue="0" android:entryValues="@array/maps_values" />
+        <EditTextPreference android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="false" android:digits="\ 1234567890" android:title="@string/a_settings_item_refresh_rate_title" android:key="mock_interval_timeout" android:defaultValue="100" android:inputType="number" />
+        <EditTextPreference android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="false" android:digits="1234567890." android:title="@string/a_settings_item_mock_gps_accuracy" android:key="mock_gps_accuracy" android:defaultValue="1.2" android:inputType="number" />
+        <SwitchPreference android:title="@string/a_settings_item_mock_gps_float_title" android:key="mock_gps_float_enable" android:summary="@string/a_settings_item_mock_gps_float_summary" android:defaultValue="true" />
+        <SwitchPreference android:title="@string/a_settings_item_mock_gps_status_title" android:key="mock_gps_status_enable" android:summary="@string/a_settings_item_mock_gps_status_summary" android:defaultValue="true" />
+        <SwitchPreference android:title="@string/a_settings_item_mock_allow_search_gps_title" android:key="mock_allow_search_gps_enable" android:summary="@string/a_settings_item_mock_allow_search_gps_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/a_settings_category_mock_cell">
+        <SwitchPreference android:title="@string/a_settings_item_mock_cell_mock_siminfo_title" android:key="mock_siminfo_enable" android:summary="@string/a_settings_item_mock_cell_mock_siminfo_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/a_settings_category_mock_steps">
+        <SwitchPreference android:title="@string/a_settings_item_mock_steps_day_reset_title" android:key="mock_steps_day_reset_enable" android:summary="@string/a_settings_item_mock_steps_day_reset_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pc_support_abis">
+        <SwitchPreference android:title="@string/a_settings_category_support_abis_item_x86_title" android:key="abi_x86_enable" android:summary="@string/a_settings_category_support_abis_item_x86_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/a_settings_category_debug">
+        <EditTextPreference android:hint="@string/a_settings_category_general_sysread_time_hint" android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:digits="\ 1234567890" android:title="@string/a_settings_category_general_sysready_wait_time" android:key="sysready_time" android:defaultValue="180000" android:inputType="number" />
+        <SwitchPreference android:title="SELinux" android:key="selinux_status" android:summary="Unknown" android:defaultValue="true" />
+        <SwitchPreference android:title="@string/a_settings_category_debug_item_xposed_mode" android:key="xposed_mode" android:summary="@string/a_settings_category_debug_item_xposed_mode_hint" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/a_settings_category_debug_item_run_log" android:key="is_logcat_enabled" android:summary="@string/a_settings_category_debug_item_run_log_hint" android:defaultValue="false" />
+        <Preference android:title="@string/a_settings_category_debug_item_clearenv" android:key="clearEnv" android:summary="@string/a_settings_category_debug_item_clearenv_hint" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/a_settings_category_other" android:key="pc_other">
+        <EditTextPreference android:hint="@string/a_settings_category_general_history_size_hint" android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:digits="\ 1234567890" android:title="@string/a_settings_category_general_history_size" android:key="history_size" android:defaultValue="100" android:inputType="number" />
+        <Preference android:title="@string/a_settings_category_other_data_exprot" android:key="data_export" android:summary="@string/a_settings_category_other_data_exprot_hint" />
+        <Preference android:title="@string/a_settings_category_other_data_import" android:key="data_import" android:summary="@string/a_settings_category_other_data_import_hint" />
+        <SwitchPreference android:title="@string/a_settings_category_other_item_bootads_title" android:key="is_bootads_enabled" android:summary="@string/a_settings_category_other_item_bootads_hint" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/a_settings_category_about">
+        <Preference android:title="@string/a_settings_item_version_title" android:key="versionCode" android:summary="V1.0.0" />
+        <PreferenceScreen android:title="@string/a_settings_item_contact_title" android:key="contact" android:summary="Email: lerist.dev@gmail.com" />
+    </PreferenceCategory>
+</PreferenceScreen>

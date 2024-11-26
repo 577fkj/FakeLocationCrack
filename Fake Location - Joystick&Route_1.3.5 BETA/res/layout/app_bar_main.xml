@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/app_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="@dimen/app_bar_height">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/toolbar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentScrim="?colorPrimary" app:expandedTitleMarginBottom="100.0dip" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap" app:toolbarId="@id/toolbar">
+            <ImageView android:layout_gravity="center|right|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-60.0dip" android:src="@mipmap/ic_main_slogon" android:alpha="0.2" />
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:popupTheme="@style/AppTheme.PopupOverlay" app:title="@string/app_name" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView android:textSize="@dimen/dp10" android:textColor="@color/font_color_hint" android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:layout_marginRight="@dimen/dp8" android:layout_marginBottom="@dimen/dp4" android:text="@string/a_main_tv_terms" />
+    <include layout="@layout/content_main" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" app:backgroundTint="@color/colorPrimary" app:elevation="@dimen/dp16" app:layout_anchor="@id/content" app:layout_anchorGravity="end|top|center" app:layout_behavior="com.lerist.fakelocation.behavior.FloatingActionButtonSrollingBehavior" app:srcCompat="@drawable/ic_action_add" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

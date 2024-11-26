@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp16" android:paddingTop="@dimen/dp8" android:paddingRight="@dimen/dp16" android:paddingBottom="@dimen/dp8" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioButton android:id="@id/i_renewal_goods_rb_checked" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp2" android:checked="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp16">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp20" android:textColor="@color/colorPrimary" android:id="@id/i_renewal_goods_tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥5.00" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_normal" android:id="@id/i_renewal_goods_tv_price_origin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:text="¥8.00" />
+            <carbon.widget.TextView android:textSize="@dimen/dp12" android:textStyle="bold" android:textColor="@color/vip_text_3" android:layout_gravity="center_vertical" android:id="@id/i_renewal_goods_tv_recommend" android:background="@color/vip_1" android:paddingLeft="@dimen/dp6" android:paddingTop="@dimen/dp2" android:paddingRight="@dimen/dp6" android:paddingBottom="@dimen/dp2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp12" android:text="活动" app:carbon_cornerRadius="@dimen/dp2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/colorPrimary" android:id="@id/i_renewal_goods_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 个月(30天)" />
+            <TextView android:textSize="@dimen/dp14" android:textColor="@color/font_color_hint" android:id="@id/i_renewal_goods_tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" | 优惠至12月15日" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

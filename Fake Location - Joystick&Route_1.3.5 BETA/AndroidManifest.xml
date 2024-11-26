@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="dev.lerist.fakelocation" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <queries>
+        <package android:name="com.lerist.fakelocation.common.xposed"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+    </queries>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hasFragileUserData="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.lerist.fakelocation.FLApp" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name="com.lerist.fakelocation.ui.activity.BaiduSelectRouteActivity" android:theme="@style/AppTheme.SelectRoute"/>
+        <activity android:label="@string/a_baidu_edit_location_title" android:name="com.lerist.fakelocation.ui.activity.BaiduEditLocationActivity" android:parentActivityName="com.lerist.fakelocation.ui.activity.MainActivity" android:theme="@style/AppTheme.colorAccent2"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="F1lcfp2oiZXU2XQkqbahvB6C1anSPcLB"/>
+        <service android:enabled="true" android:name="com.baidu.location.f"/>
+        <service android:enabled="true" android:name="com.lerist.fakelocation.service.RockerService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.lerist.fakelocation.service.KeepAliveService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.lerist.fakelocation.ui.activity.MainActivity" android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="dev.lerist.fakelocation.module.action.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="home"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/a_baidu_select_location_title" android:name="com.lerist.fakelocation.ui.activity.BaiduSelectLocationActivity" android:parentActivityName="com.lerist.fakelocation.ui.activity.MainActivity"/>
+        <activity android:exported="true" android:label="@string/a_renewal_title" android:name="com.lerist.fakelocation.ui.activity.RenewalActivity" android:parentActivityName="com.lerist.fakelocation.ui.activity.MainActivity">
+            <intent-filter>
+                <action android:name="dev.lerist.fakelocation.module.action.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="renewal"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/a_select_app" android:name="com.lerist.fakelocation.ui.activity.SelectAppActivity" android:parentActivityName="com.lerist.fakelocation.ui.activity.MainActivity"/>
+        <activity android:exported="false" android:label="@string/a_select_wifi_title" android:name="com.lerist.fakelocation.ui.activity.SelectWifiActivity" android:parentActivityName="com.lerist.fakelocation.ui.activity.MainActivity"/>
+        <activity android:exported="false" android:label="@string/title_activity_settings" android:name="com.lerist.fakelocation.ui.activity.SettingsActivity" android:parentActivityName="com.lerist.fakelocation.ui.activity.MainActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.lerist.lib.factory.utils.LWebActivity" android:parentActivityName="com.lerist.fakelocation.ui.activity.MainActivity"/>
+        <activity android:exported="true" android:name="com.lerist.common.login.ui.activity.LoginActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="dev.lerist.fakelocation.module.action.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="login"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:exported="false" android:label="@string/a_baidu_select_location_title" android:name="com.lerist.common.googlemaps.activity.GoogleSelectLocationActivity" android:parentActivityName="com.lerist.common.googlemaps.activity.GoogleSelectLocationActivity"/>
+        <activity android:exported="false" android:name="com.lerist.common.googlemaps.activity.GoogleSelectRouteActivity" android:theme="@style/AppTheme.SelectRoute"/>
+        <service android:enabled="true" android:exported="true" android:name="com.lerist.common.sharedata.service.ShareDataService">
+            <intent-filter>
+                <action android:name="com.lerist.common.sharedata.action.BIND"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.lerist.common.ml.MRService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.lerist.common.ml.MLNService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.lerist.common.ml.DJService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.lerist.common.version.LOverrideActivity" android:theme="@style/TransparentAlertDialog"/>
+        <provider android:authorities="dev.lerist.fakelocation.lerist.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.lerist.lib.factory.utils.LeristFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/lerist_file_paths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.lerist.lib.factory.utils.LResultActivity" android:theme="@style/TransparentDialog"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.lerist.lib.factory.utils.LAskPermissions" android:theme="@style/TransparentAlertDialog"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.lerist.lib.factory.utils.LOverrideActivity" android:theme="@style/TransparentAlertDialog"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.lerist.lib.notice.LNoticeActivity" android:theme="@style/TranslucentAlertDialog"/>
+        <service android:enabled="true" android:exported="true" android:name="com.lerist.common.mockserver.MockServiceProvider"/>
+        <service android:enabled="true" android:exported="true" android:name="com.lerist.common.mockserver.MockServer"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="6.0.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+    </application>
+</manifest>

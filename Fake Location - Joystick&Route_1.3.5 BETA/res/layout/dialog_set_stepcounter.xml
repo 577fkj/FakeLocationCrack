@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp4">
+        <TextView android:textSize="@dimen/dp16" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/d_set_stepcounter_tv_syscounter_title" />
+        <TextView android:textSize="@dimen/dp16" android:textStyle="bold" android:id="@id/d_set_stepcounter_tv_syscounter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp8" android:text="@string/d_set_stepcounter_tv_syscounter_nostepcounter" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12">
+        <androidx.appcompat.widget.AppCompatEditText android:textSize="@dimen/dp16" android:textStyle="bold" android:id="@id/d_set_stepcounter_et_name" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/d_set_stepcounter_et_name" android:digits="\ 1234567890" android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

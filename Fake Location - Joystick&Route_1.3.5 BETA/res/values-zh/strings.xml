@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d_settings_altitude_btn_cancel">取消</string>
+    <string name="d_settings_altitude_btn_ok">确定</string>
+    <string name="d_settings_altitude_title">设置海拔</string>
+    <string name="datashifter_hint_data_parse_failed">数据解析失败</string>
+    <string name="datashifter_hint_file_parse_failed">文件解析失败</string>
+    <string name="datashifter_hint_scode_content_parse_failed">S码内容解析失败</string>
+    <string name="datashifter_hint_scode_parse_failed">S码解析失败, 请检查S码是否正确</string>
+    <string name="datashifter_hint_unknown_data_version">未知的数据版本</string>
+    <string name="datashifter_hint_writetofile_failed">写入文件失败</string>
+    <string name="global_no_pro_authority_hint">功能受限, 请解锁专业版</string>
+    <string name="l_lerinet_hint_no_network">网络不可用, 请检查网络连接</string>
+    <string name="lib_factory_a_web_menu_refresh">刷新</string>
+    <string name="lib_factory_a_web_menu_refreshlib_factory_a_web_menu_openinbrowser">在浏览器中打开</string>
+    <string name="lnotice_dialog_btn_agree">同意</string>
+    <string name="lnotice_dialog_btn_dont_agree">不同意</string>
+    <string name="lnotice_dialog_btn_no_longer_prompt">不再显示</string>
+    <string name="lnotice_dialog_btn_ok">确定</string>
+    <string name="s_mock_route_notification_content">路线模拟正在运行</string>
+    <string name="s_mock_route_notification_mock_paused">路线模拟已暂停</string>
+    <string name="s_mock_route_notification_route_mock_finish">路线模拟完成</string>
+    <string name="s_mock_route_notification_route_mock_mileage">" | 模拟里程: %1$s 公里"</string>
+    <string name="s_notification_mock_location_content">位置模拟服务正在运行(NOROOT模式)</string>
+</resources>
