@@ -39,6 +39,7 @@
     :try_start_0
     const-string v1, "/data/fl/libStepSensor.so"
 
+    invoke-static {p0}, Lcn/fkj233/Helper;->log(Ljava/lang/String;)V
     invoke-static {v1}, Ljava/lang/System;->load(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

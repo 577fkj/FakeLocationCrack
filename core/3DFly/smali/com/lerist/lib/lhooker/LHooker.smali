@@ -1867,6 +1867,7 @@
 
     :cond_0
     :try_start_1
+    invoke-static {p0}, Lcn/fkj233/Helper;->log(Ljava/lang/String;)V
     invoke-static {p0}, Ljava/lang/System;->load(Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
