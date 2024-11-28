@@ -106,17 +106,7 @@
 
     new-instance v0, Landroid/content/IntentFilter;
 
-    new-instance v1, Ljava/lang/String;
-
-    const-string v2, "U1RPUF9GTF9NT0NL"
-
-    const/4 v3, 0x0
-
-    invoke-static {v2, v3}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Ljava/lang/String;-><init>([B)V
+    const-string v1, "STOP_FL_MOCK"
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 

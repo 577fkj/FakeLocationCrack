@@ -19,6 +19,15 @@ echo -------------------------------------
 echo.
 
 echo.
+echo ------------------------
+echo Cleaning build folder...
+echo ------------------------
+echo.
+
+rmdir /s /q "%~dp0core\build"
+rmdir /s /q "%~dp0build"
+
+echo.
 echo ---------------------
 echo Building core APKs...
 echo ---------------------
