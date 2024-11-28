@@ -29,3 +29,16 @@
     return-void
 .end method
 
+.method public static log(Ljava/lang/Object;)V
+    .locals 2
+
+    sget-object v0, Lcn/fkj233/Helper;->TAG:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method

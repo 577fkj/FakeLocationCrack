@@ -25,9 +25,15 @@
 .method public static init(Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 0
 
+    .line 1
+    invoke-static {p0}, Lcn/fkj233/Helper;->log(Ljava/lang/Object;)V
+
+    .line 2
     invoke-static {p0}, LԪ/Ԩ;->ԩ(Ljava/lang/Object;)[Ljava/lang/Object;
 
+    .line 3
     move-result-object p0
-
+    
+    .line 4
     return-object p0
 .end method

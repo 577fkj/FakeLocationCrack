@@ -435,10 +435,16 @@
 .method public static ԩ(Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 5
 
+    .line 1
+    invoke-static {p0}, Lcn/fkj233/Helper;->log(Ljava/lang/Object;)V
+
+    .line 2
     move-object v0, p0
 
+    .line 3
     check-cast v0, Landroid/content/Context;
 
+    .line 4
     sput-object v0, LԪ/Ԩ;->Ԫ:Landroid/content/Context;
 
     const-string v0, "InjectDex"
