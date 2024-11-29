@@ -30,15 +30,15 @@
 .end method
 
 .method public static log(Ljava/lang/Object;)V
-    .locals 2
+    .locals 1
 
     sget-object v0, Lcn/fkj233/Helper;->TAG:Ljava/lang/String;
 
-    invoke-direct {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    move-result v1
+    move-result-object p0
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method

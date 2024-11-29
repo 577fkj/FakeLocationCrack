@@ -4,6 +4,7 @@ setlocal
 set WORKDIR=%~dp0
 set APKTOOL_JAR="%WORKDIR%tools\apktool.jar"
 set APKSIGNER="%WORKDIR%tools\apksigner.jar"
+set ZIPALIGN="%WORKDIR%tools\zipalign.exe"
 
 set KEYSTORE="%WORKDIR%tools\keystore.jks"
 set KEYSTORE_PASS="12345678"
@@ -13,6 +14,7 @@ echo -------------------------------------
 echo Workdir is %WORKDIR%
 echo APKTOOL_JAR is %APKTOOL_JAR%
 echo APKSIGNER is %APKSIGNER%
+echo ZIPALIGN is %ZIPALIGN%
 echo KEYSTORE is %KEYSTORE%
 echo KEYSTORE_PASS is %KEYSTORE_PASS%
 echo -------------------------------------
@@ -34,7 +36,8 @@ echo ---------------------
 echo.
 
 cd /d "%~dp0core"
-java -jar %APKTOOL_JAR% b 3DFly -o "build\3DFly.apk"
+java -jar %APKTOOL_JAR% b 3DFly -o "build\3DFlyNoOpt.apk"
+%ZIPALIGN% -v -p 4 "build\3DFlyNoOpt.apk" "build\3DFly.apk"
 
 echo.
 echo --------------------
@@ -67,7 +70,8 @@ echo Building Fake Location APK...
 echo -----------------------------
 echo.
 
-java -jar %APKTOOL_JAR% b "Fake Location - Joystick&Route_1.3.5 BETA" -o "build/FakeLocation.apk"
+java -jar %APKTOOL_JAR% b "Fake Location - Joystick&Route_1.3.5 BETA" -o "build/FakeLocationNoOpt.apk"
+%ZIPALIGN% -v -p 4 "build/FakeLocationNoOpt.apk" "build/FakeLocation.apk"
 
 echo.
 echo ----------------------------
